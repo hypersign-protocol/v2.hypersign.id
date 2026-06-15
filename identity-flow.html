@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hypersign — Identity Flow</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --fg: #303d5f; --border: #e5e7eb; --soft: #f9fafb;
+      --primary: #404462; --brand-light: #c9d1ff;
+      --brand-mid: #303d5f; --brand-dark: #191c27;
+      --body: #475569; --muted: #64748b;
+      --green: #22c55e; --blue: #2563eb;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background:
+        radial-gradient(ellipse 75% 55% at 5% 0%,   color-mix(in srgb,#c9d1ff 28%,transparent), transparent 70%),
+        radial-gradient(ellipse 55% 45% at 95% 100%, color-mix(in srgb,#303d5f 18%,transparent), transparent 70%),
+        #eef0ff;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 32px 16px; gap: 20px;
+    }
+    .step-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--muted);
+    }
+
+    /* ══ CARD ══════════════════════════════════════════════ */
+    .demo-card {
+      width: 100%; max-width: 960px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      border-radius: 24px; overflow: hidden; min-height: 560px;
+      box-shadow: 0 40px 100px rgba(15,23,42,.2), 0 0 0 1px rgba(15,23,42,.07);
+    }
+
+    /* ══ LEFT — dark info panel ═══════════════════════════ */
+    .info-panel {
+      background: #191c27;
+      position: relative; overflow: hidden;
+    }
+    .info-panel::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 65% 55% at 0% 0%,   rgba(201,209,255,.09), transparent 65%),
+        radial-gradient(ellipse 50% 45% at 100% 100%, rgba(48,61,95,.5),   transparent 70%);
+    }
+
+    /* Logo — fixed, always visible */
+    .info-logo {
+      position: absolute; top: 28px; left: 40px; z-index: 10;
+      display: flex; align-items: center;
+    }
+    .info-logo img { height: 28px; width: auto; filter: brightness(0) invert(1); opacity: .88; }
+
+    /* ── TRANSITION: blur + brightness (no slide) ── */
+    .info-content {
+      position: absolute; inset: 0;
+      padding: 88px 40px 48px;
+      display: flex; flex-direction: column; justify-content: center;
+      opacity: 0;
+      filter: blur(10px) brightness(.6);
+      transform: scale(.97);
+      transition: opacity .6s cubic-bezier(.4,0,.2,1),
+                  filter .6s cubic-bezier(.4,0,.2,1),
+                  transform .6s cubic-bezier(.4,0,.2,1);
+      pointer-events: none;
+    }
+    .info-content.active {
+      opacity: 1; filter: blur(0) brightness(1); transform: scale(1);
+      pointer-events: all;
+    }
+    .info-content.leaving {
+      opacity: 0; filter: blur(8px) brightness(1.3); transform: scale(1.02);
+      transition: opacity .42s cubic-bezier(.4,0,.2,1),
+                  filter .42s cubic-bezier(.4,0,.2,1),
+                  transform .42s cubic-bezier(.4,0,.2,1);
+    }
+
+    .info-num   { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(201,209,255,.4); margin-bottom: 20px; }
+    .info-icon  {
+      width: 54px; height: 54px; border-radius: 14px;
+      background: rgba(201,209,255,.1); border: 1px solid rgba(201,209,255,.18);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 22px;
+    }
+    .info-title { font-size: 30px; font-weight: 800; color: white; line-height: 1.12; margin-bottom: 14px; }
+    .info-sub   { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.7; max-width: 280px; }
+    .info-tag   {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(201,209,255,.08); border: 1px solid rgba(201,209,255,.18);
+      border-radius: 999px; padding: 5px 14px; margin-top: 20px;
+      font-size: 11px; font-weight: 700; color: rgba(201,209,255,.7); width: fit-content;
+    }
+    .tag-dot  { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .info-dots { display: flex; gap: 6px; margin-top: 24px; }
+    .idot { width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.18); transition: all .3s; }
+    .idot.a { width: 22px; background: var(--brand-light); }
+
+    /* ══ RIGHT — phone panel ══════════════════════════════ */
+    .phone-panel {
+      background: linear-gradient(148deg, #dce3ff 0%, #c7d1ff 100%);
+      display: flex; align-items: center; justify-content: center;
+      padding: 36px 28px; position: relative; overflow: hidden;
+    }
+    .phone-panel::before {
+      content: ''; position: absolute; width: 300px; height: 300px; border-radius: 50%;
+      background: rgba(255,255,255,.2); top: -90px; right: -90px; pointer-events: none;
+    }
+    .phone-panel::after {
+      content: ''; position: absolute; width: 180px; height: 180px; border-radius: 50%;
+      background: rgba(255,255,255,.14); bottom: -50px; left: -30px; pointer-events: none;
+    }
+
+    .phone {
+      width: 246px; background: #f2f2f7; border-radius: 44px;
+      box-shadow: 0 32px 72px rgba(15,23,42,.28), 0 0 0 2px rgba(0,0,0,.09), inset 0 0 0 1px rgba(255,255,255,.55);
+      overflow: hidden; position: relative; z-index: 1;
+    }
+    .phone-island {
+      width: 90px; height: 10px; background: #111;
+      border-radius: 0 0 12px 12px; margin: 10px auto 0;
+    }
+    .phone-status {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 5px 18px 6px; font-size: 11px; font-weight: 700; color: #111;
+    }
+    .ph-icons { display: flex; align-items: center; gap: 4px; }
+
+    /* Inner white card */
+    .phone-content {
+      margin: 0 10px 14px; background: white; border-radius: 28px;
+      position: relative; overflow: hidden; min-height: 420px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.07);
+    }
+
+    /* ── PHONE SCREEN TRANSITION: same blur/focus ── */
+    .phone-screen {
+      position: absolute; inset: 0;
+      opacity: 0;
+      filter: blur(6px) brightness(.8);
+      transform: scale(.97);
+      transition: opacity .55s cubic-bezier(.4,0,.2,1),
+                  filter .55s cubic-bezier(.4,0,.2,1),
+                  transform .55s cubic-bezier(.4,0,.2,1);
+      pointer-events: none;
+    }
+    .phone-screen.active  { opacity: 1; filter: blur(0) brightness(1); transform: scale(1); pointer-events: all; }
+    .phone-screen.leaving {
+      opacity: 0; filter: blur(5px) brightness(1.15); transform: scale(1.02);
+      transition: opacity .38s cubic-bezier(.4,0,.2,1),
+                  filter .38s cubic-bezier(.4,0,.2,1),
+                  transform .38s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ── Shared phone elements (NO header bar) ── */
+    .ps-wrap { padding: 18px 16px; }
+    .ps-title { font-size: 16px; font-weight: 800; color: var(--fg); margin-bottom: 2px; }
+    .ps-sub   { font-size: 11px; color: var(--muted); margin-bottom: 14px; }
+    .ps-label { font-size: 9px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #999; display: block; margin-bottom: 4px; }
+    .ps-input {
+      width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px;
+      font-size: 12px; font-family: inherit; background: var(--soft); color: var(--fg);
+      margin-bottom: 9px; outline: none;
+    }
+    .ps-btn {
+      width: 100%; padding: 11px; border-radius: 10px; background: var(--primary);
+      color: white; font-size: 13px; font-weight: 700; border: none; font-family: inherit; cursor: pointer;
+      animation: pulsebtn 2s ease-in-out infinite;
+    }
+    @keyframes pulsebtn {
+      0%,100% { box-shadow: 0 0 0 0 rgba(64,68,98,.4); }
+      55%      { box-shadow: 0 0 0 9px rgba(64,68,98,0); }
+    }
+
+    /* Age row */
+    .age-row {
+      border: 1px solid var(--border); border-radius: 8px;
+      background: var(--soft); padding: 10px 12px;
+      display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+    }
+    .age-cb {
+      width: 20px; height: 20px; border-radius: 4px;
+      border: 2px solid #d1d5db; background: white;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: all .3s;
+    }
+    .age-cb.checked { border-color: var(--green); background: var(--green); }
+
+    /* Emirates ID card */
+    .id-card {
+      background: linear-gradient(135deg,#fefefe,#faf3e4);
+      border: 1px solid #e0cfa0; border-radius: 9px;
+      padding: 11px; position: relative; overflow: hidden; margin-bottom: 10px;
+    }
+    .id-card::after {
+      content: ''; position: absolute; top:0; right:0; bottom:0; width:36%;
+      background: linear-gradient(135deg,rgba(0,90,160,.04),rgba(0,90,160,.1));
+      clip-path: polygon(16% 0,100% 0,100% 100%,0 100%);
+    }
+    .id-top {
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 7px; margin-bottom: 7px;
+      border-bottom: 1px solid rgba(0,90,160,.12);
+    }
+    .id-body-row { display: flex; gap: 9px; }
+    .id-photo {
+      width: 40px; height: 50px; border-radius: 5px;
+      background: #e8ecf0; border: 1px solid #d0d7e0;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .id-f { margin-bottom: 4px; }
+    .id-k { font-size: 7px; font-weight: 700; text-transform: uppercase; color: #999; display: block; }
+    .id-v { font-size: 10px; font-weight: 700; color: #1a2340; }
+    .id-num { font-size: 8px; font-weight: 600; color: #005aa0; letter-spacing: 1px; margin-top: 3px; }
+    .scan-line {
+      position: absolute; left:0; right:0; height:1.5px;
+      background: linear-gradient(90deg,transparent,var(--green) 40%,var(--green) 60%,transparent);
+      box-shadow: 0 0 8px var(--green);
+      animation: scanAnim 1.8s ease-in-out infinite;
+    }
+    @keyframes scanAnim {
+      0%   { top:8%;  opacity:0; } 8%  { opacity:1; }
+      92%  { opacity:1; }          100% { top:92%; opacity:0; }
+    }
+    .v-badge {
+      display: flex; align-items: center; gap: 7px;
+      background: #f0fdf4; border: 1px solid #bbf7d0;
+      border-radius: 7px; padding: 8px 10px;
+      font-size: 11px; font-weight: 700; color: #15803d; margin-bottom: 8px;
+    }
+
+    /* ══ BIOMETRIC SCREEN (full dark, SVG-only) ══════════ */
+    .bio-screen {
+      position: absolute; inset: 0; border-radius: 28px;
+      background: #0b0d16;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0; overflow: hidden;
+    }
+    /* Top label */
+    .bio-label {
+      font-size: 9px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: rgba(201,209,255,.35);
+      margin-bottom: 20px;
+    }
+
+    /* Face viewport */
+    .bio-vp {
+      position: relative; width: 148px; height: 176px; margin-bottom: 22px;
+    }
+    /* Clipped oval — image + scan live here */
+    .bio-clip {
+      position: absolute; inset: 0;
+      overflow: hidden;
+      clip-path: ellipse(48% 50% at 50% 50%);
+    }
+    /* SVG face silhouette */
+    .bio-face-svg {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    /* Animated scan sweep */
+    .bio-sweep {
+      position: absolute; left: -10%; right: -10%; height: 3px;
+      background: linear-gradient(90deg, transparent, rgba(34,197,94,.85) 35%, rgba(34,197,94,.85) 65%, transparent);
+      box-shadow: 0 0 14px rgba(34,197,94,.7), 0 0 30px rgba(34,197,94,.35);
+      animation: bioSweep 2s ease-in-out infinite;
+    }
+    @keyframes bioSweep {
+      0%   { top:4%;  opacity:0; } 6%  { opacity:1; }
+      94%  { opacity:1; }          100% { top:96%; opacity:0; }
+    }
+    /* Oval border ring (outside clip) */
+    .bio-ring {
+      position: absolute; inset: 0;
+      border-radius: 50%;
+      border: 2px solid rgba(201,209,255,.4);
+      transition: border-color .5s ease;
+    }
+    .bio-ring.success { border-color: var(--green); box-shadow: 0 0 0 4px rgba(34,197,94,.12); }
+    /* Corner brackets */
+    .bio-br { position: absolute; width: 18px; height: 18px; }
+    .bio-br.tl { top:-1px; left:-1px; border-top:2.5px solid #c9d1ff; border-left:2.5px solid #c9d1ff; border-radius:4px 0 0 0; }
+    .bio-br.tr { top:-1px; right:-1px; border-top:2.5px solid #c9d1ff; border-right:2.5px solid #c9d1ff; border-radius:0 4px 0 0; }
+    .bio-br.bl { bottom:-1px; left:-1px; border-bottom:2.5px solid #c9d1ff; border-left:2.5px solid #c9d1ff; border-radius:0 0 0 4px; }
+    .bio-br.br { bottom:-1px; right:-1px; border-bottom:2.5px solid #c9d1ff; border-right:2.5px solid #c9d1ff; border-radius:0 0 4px 0; }
+
+    /* Status text */
+    .bio-status { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.85); text-align: center; margin-bottom: 5px; }
+    .bio-hint   { font-size: 10px; color: rgba(255,255,255,.35); text-align: center; margin-bottom: 16px; }
+    /* Pulsing dots */
+    .bio-dots { display: flex; gap: 7px; }
+    .bio-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: rgba(201,209,255,.2);
+      animation: dotP 1.6s ease-in-out infinite;
+    }
+    .bio-dot:nth-child(2) { animation-delay: .3s; }
+    .bio-dot:nth-child(3) { animation-delay: .6s; }
+    @keyframes dotP {
+      0%,100% { background: rgba(201,209,255,.2); transform: scale(1); }
+      50%      { background: rgba(201,209,255,.8); transform: scale(1.35); }
+    }
+
+    /* Verified overlay (fades in on top) */
+    .bio-ok {
+      position: absolute; inset: 0; border-radius: 28px;
+      background: #0b0d16;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity .7s ease; pointer-events: none;
+    }
+    .bio-ok.show { opacity: 1; pointer-events: all; }
+    .bio-ok-ring {
+      width: 80px; height: 80px; border-radius: 50%;
+      border: 3px solid var(--green); background: rgba(34,197,94,.08);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      animation: bigPop .55s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes bigPop { 0%{transform:scale(.3);opacity:0} 100%{transform:scale(1);opacity:1} }
+    .bio-ok-title { font-size: 18px; font-weight: 800; color: white; margin-bottom: 5px; }
+    .bio-ok-sub   { font-size: 11px; color: rgba(255,255,255,.45); }
+    /* Subtle grid lines on dark bg */
+    .bio-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(201,209,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,209,255,.04) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Access + privacy */
+    .access-body {
+      padding: 24px 14px 14px;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+    }
+    .big-check {
+      width: 62px; height: 62px; border-radius: 50%;
+      background: #f0fdf4; border: 3px solid var(--green);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 11px;
+      animation: pop .5s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes pop { 0%{transform:scale(.3);opacity:0} 100%{transform:scale(1);opacity:1} }
+    .user-chip {
+      display: flex; align-items: center; gap: 9px;
+      background: var(--soft); border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px 12px; width: 100%; margin-top: 11px; text-align: left;
+    }
+    .u-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--brand-light); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; color: var(--brand-mid); flex-shrink: 0; }
+    .u-name { font-size: 12px; font-weight: 700; color: var(--fg); }
+    .u-tag  { display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--green); font-weight: 600; margin-top: 2px; }
+    .u-tag-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
+    .priv-note {
+      margin-top: 10px; padding: 10px 12px; width: 100%;
+      background: #f8f9ff; border: 1px solid var(--border); border-radius: 10px;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .priv-note p { font-size: 10px; color: var(--muted); line-height: 1.55; }
+    .priv-pills { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+    .priv-pill { background: white; border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 9px; font-weight: 600; color: var(--muted); }
+
+    /* Nav row */
+    .nav-row { display: flex; align-items: center; gap: 16px; }
+    .dots { display: flex; gap: 8px; }
+    .dot { width: 8px; height: 8px; border-radius: 4px; background: rgba(48,61,95,.2); transition: all .3s; cursor: pointer; }
+    .dot.active { width: 26px; background: var(--primary); }
+    .nav-btn { padding: 9px 20px; border-radius: 8px; background: var(--primary); color: white; font-size: 13px; font-weight: 700; border: none; cursor: pointer; font-family: inherit; transition: opacity .2s; }
+    .nav-btn:hover { opacity: .85; }
+    .nav-btn.ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+
+<div class="step-label" id="step-label">Step 1 of 5 — Website Login</div>
+
+<div class="demo-card">
+
+  <!-- ═══════════════════════════════════════
+       LEFT — info panel
+  ═══════════════════════════════════════ -->
+  <div class="info-panel">
+
+    <!-- Logo always visible -->
+    <div class="info-logo">
+      <img src="/imports/logo.png" alt="Hypersign" />
+    </div>
+
+    <!-- Step 1 -->
+    <div class="info-content active" id="ic1">
+      <div class="info-num">01 / 05</div>
+      <div class="info-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="11" width="18" height="11" rx="2" stroke="#c9d1ff" stroke-width="1.8"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#c9d1ff" stroke-width="1.8"/>
+        </svg>
+      </div>
+      <h2 class="info-title">Secure,<br>frictionless<br>sign-in.</h2>
+      <p class="info-sub">One-tap login with built-in identity verification. No forms re-filled, no friction added.</p>
+      <div class="info-tag"><div class="tag-dot"></div>Powered by Hypersign</div>
+      <div class="info-dots"><div class="idot a"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="info-content" id="ic2">
+      <div class="info-num">02 / 05</div>
+      <div class="info-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="#c9d1ff" stroke-width="1.8"/>
+          <path d="M12 6v6l4 2" stroke="#c9d1ff" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 class="info-title">Prove you're<br>18+, privately.</h2>
+      <p class="info-sub">No birthday stored. No data shared. Hypersign sends only an eligibility result — yes or no.</p>
+      <div class="info-tag"><div class="tag-dot"></div>Zero personal data to the website</div>
+      <div class="info-dots"><div class="idot"></div><div class="idot a"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="info-content" id="ic3">
+      <div class="info-num">03 / 05</div>
+      <div class="info-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="5" width="20" height="14" rx="2" stroke="#c9d1ff" stroke-width="1.8"/>
+          <circle cx="8" cy="12" r="2.5" stroke="#c9d1ff" stroke-width="1.5"/>
+          <path d="M13 10h5M13 13h3" stroke="#c9d1ff" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 class="info-title">Emirates ID<br>verified in<br>seconds.</h2>
+      <p class="info-sub">OCR extraction and authenticity check. Name, DOB, and ID number confirmed on-device.</p>
+      <div class="info-tag"><div class="tag-dot"></div>UAE · 220+ countries supported</div>
+      <div class="info-dots"><div class="idot"></div><div class="idot"></div><div class="idot a"></div><div class="idot"></div><div class="idot"></div></div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="info-content" id="ic4">
+      <div class="info-num">04 / 05</div>
+      <div class="info-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="8" r="4" stroke="#c9d1ff" stroke-width="1.8"/>
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#c9d1ff" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="8" r="6.5" stroke="#c9d1ff" stroke-width="1" stroke-dasharray="3 2" opacity=".5"/>
+        </svg>
+      </div>
+      <h2 class="info-title">Biometric<br>confirmed.<br>Face matched.</h2>
+      <p class="info-sub">Liveness check + face-to-ID matching. The person holding the phone is the person on the document.</p>
+      <div class="info-tag"><div class="tag-dot"></div>99.7% face match confidence</div>
+      <div class="info-dots"><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot a"></div><div class="idot"></div></div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="info-content" id="ic5">
+      <div class="info-num">05 / 05</div>
+      <div class="info-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v5c0 4.6-3 8.8-7 10-4-1.2-7-5.4-7-10V6l7-3z" stroke="#c9d1ff" stroke-width="1.8" fill="rgba(201,209,255,.1)"/>
+          <path d="M9 12l2 2 4-4" stroke="#c9d1ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="info-title">Your data?<br>Already gone.</h2>
+      <p class="info-sub">Hypersign never stores raw identity data. Everything is cryptographically erased. Zero copies retained — ever.</p>
+      <div class="info-tag"><div class="tag-dot"></div>GDPR · eIDAS 2.0 · Privacy by design</div>
+      <div class="info-dots"><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot a"></div></div>
+    </div>
+
+  </div><!-- /info-panel -->
+
+  <!-- ═══════════════════════════════════════
+       RIGHT — phone panel
+  ═══════════════════════════════════════ -->
+  <div class="phone-panel">
+    <div class="phone">
+      <div class="phone-island"></div>
+      <div class="phone-status">
+        <span>9:41</span>
+        <div class="ph-icons">
+          <svg width="16" height="11" viewBox="0 0 16 11" fill="none">
+            <rect x="0"  y="5"   width="3" height="6"   rx="1" fill="#111"/>
+            <rect x="4"  y="3.5" width="3" height="7.5" rx="1" fill="#111"/>
+            <rect x="8"  y="2"   width="3" height="9"   rx="1" fill="#111"/>
+            <rect x="12" y="0.5" width="3" height="10.5" rx="1" fill="#111" opacity=".28"/>
+          </svg>
+          <svg width="15" height="11" viewBox="0 0 20 14" fill="none">
+            <path d="M10 3C6.7 3 3.8 4.4 1.6 6.7L0 5C2.6 2.2 6.1.5 10 .5s7.4 1.7 10 4.5l-1.6 1.7C16.2 4.4 13.3 3 10 3z" fill="#111"/>
+            <path d="M10 7c-2 0-3.7.8-5 2.1L3.5 7.5C5.2 5.8 7.5 4.7 10 4.7s4.8 1.1 6.5 2.8L15 9.1C13.7 7.8 12 7 10 7z" fill="#111"/>
+            <circle cx="10" cy="13" r="1.5" fill="#111"/>
+          </svg>
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none">
+            <rect x="0" y="1" width="21" height="10" rx="3" stroke="#111" stroke-width="1.2"/>
+            <rect x="2" y="3" width="15" height="6" rx="1.5" fill="#111"/>
+            <path d="M22 4.5v3a2 2 0 0 0 0-3z" fill="#111" opacity=".4"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="phone-content">
+
+        <!-- ── Screen 1: Login ───────────────────── -->
+        <div class="phone-screen active" id="ps1">
+          <div class="ps-wrap">
+            <!-- Small Hypersign branding (subtle, top of content not a bar) -->
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#c9d1ff;"></div>
+              <span style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;text-transform:uppercase;">Hypersign</span>
+            </div>
+            <div class="ps-title">Welcome back</div>
+            <div class="ps-sub">Sign in to AcmeFinance</div>
+            <label class="ps-label">Email</label>
+            <input class="ps-input" value="ahmed@acmefinance.com" readonly />
+            <label class="ps-label">Password</label>
+            <input class="ps-input" value="••••••••••" readonly style="letter-spacing:3px;font-size:16px;" />
+            <button class="ps-btn">Log In →</button>
+          </div>
+        </div>
+
+        <!-- ── Screen 2: Age verify ──────────────── -->
+        <div class="phone-screen" id="ps2">
+          <div class="ps-wrap">
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#c9d1ff;"></div>
+              <span style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;text-transform:uppercase;">Age Verification</span>
+            </div>
+            <div class="ps-title">Confirm eligibility</div>
+            <div class="ps-sub">Required before accessing this service</div>
+
+            <!-- Face bracket icon (like Persona) -->
+            <div style="display:flex;align-items:center;justify-content:center;padding:14px 0 12px;">
+              <div style="position:relative;width:84px;height:84px;">
+                <div style="position:absolute;top:0;left:0;width:18px;height:18px;border-top:2.5px solid #404462;border-left:2.5px solid #404462;border-radius:3px 0 0 0;"></div>
+                <div style="position:absolute;top:0;right:0;width:18px;height:18px;border-top:2.5px solid #404462;border-right:2.5px solid #404462;border-radius:0 3px 0 0;"></div>
+                <div style="position:absolute;bottom:0;left:0;width:18px;height:18px;border-bottom:2.5px solid #404462;border-left:2.5px solid #404462;border-radius:0 0 0 3px;"></div>
+                <div style="position:absolute;bottom:0;right:0;width:18px;height:18px;border-bottom:2.5px solid #404462;border-right:2.5px solid #404462;border-radius:0 0 3px 0;"></div>
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                  <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="9" r="4" stroke="#303d5f" stroke-width="1.8"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#303d5f" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="age-row">
+              <div class="age-cb" id="age-cb"></div>
+              <span style="font-size:12px;font-weight:600;color:var(--fg);">I confirm I am 18+ years old</span>
+            </div>
+            <div style="text-align:center;font-size:10px;color:#aaa;margin-top:4px;">
+              Verified by <strong style="color:#404462;">Hypersign</strong> · No data stored
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Screen 3: ID Scan ─────────────────── -->
+        <div class="phone-screen" id="ps3">
+          <div class="ps-wrap">
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#c9d1ff;"></div>
+              <span style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;text-transform:uppercase;">ID Document</span>
+            </div>
+            <div class="ps-title" style="font-size:14px;">Scan your Emirates ID</div>
+            <div class="ps-sub">Place your ID in the frame below</div>
+
+            <div class="id-card">
+              <div class="scan-line" id="scanline"></div>
+              <div class="id-top">
+                <span style="font-size:15px;">🇦🇪</span>
+                <div>
+                  <div style="font-size:8.5px;font-weight:700;color:#005aa0;">United Arab Emirates</div>
+                  <div style="font-size:7.5px;color:#005aa0;opacity:.6;direction:rtl;">الإمارات العربية المتحدة</div>
+                </div>
+                <div style="margin-left:auto;font-size:7px;font-weight:700;color:white;background:#005aa0;padding:2px 6px;border-radius:3px;">EMIRATES ID</div>
+              </div>
+              <div class="id-body-row">
+                <div class="id-photo">
+                  <svg width="22" height="28" viewBox="0 0 22 28" fill="none">
+                    <circle cx="11" cy="9" r="6" fill="#c9d1ff"/>
+                    <path d="M1 28c0-5.5 4.5-10 10-10s10 4.5 10 10" fill="#c9d1ff"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="id-f"><span class="id-k">Full Name</span><span class="id-v">Ahmed Al Mansouri</span></div>
+                  <div class="id-f"><span class="id-k">Date of Birth</span><span class="id-v">15 / 03 / 1990</span></div>
+                  <div class="id-f"><span class="id-k">Nationality</span><span class="id-v">UAE</span></div>
+                  <div class="id-num">784-1990-7654-3</div>
+                </div>
+              </div>
+            </div>
+            <div class="v-badge" id="idverified" style="display:none;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#22c55e"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
+              ID Verified — Ahmed Al Mansouri
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Screen 4: BIOMETRIC (full dark) ──── -->
+        <div class="phone-screen" id="ps4">
+          <div class="bio-screen">
+            <div class="bio-grid"></div>
+            <div class="bio-label">Biometric Verification</div>
+
+            <!-- Face viewport -->
+            <div class="bio-vp">
+              <!-- Clipped oval with face + sweep -->
+              <div class="bio-clip">
+                <!-- Face silhouette (SVG, centred) -->
+                <div class="bio-face-svg">
+                  <svg width="120" height="148" viewBox="0 0 120 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Shoulders / body -->
+                    <path d="M0 148 C10 110 30 95 47 88 Q60 96 73 88 C90 95 110 110 120 148Z" fill="rgba(201,209,255,0.08)"/>
+                    <!-- Neck -->
+                    <path d="M47 88 Q60 98 73 88 L70 78 Q60 83 50 78 Z" fill="rgba(201,209,255,0.08)"/>
+                    <!-- Head oval -->
+                    <ellipse cx="60" cy="52" rx="36" ry="44" fill="rgba(201,209,255,0.07)" stroke="rgba(201,209,255,0.3)" stroke-width="1.5"/>
+                    <!-- Left brow -->
+                    <path d="M38 36 Q46 31 50 35" stroke="rgba(201,209,255,0.55)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                    <!-- Right brow -->
+                    <path d="M70 35 Q74 31 82 36" stroke="rgba(201,209,255,0.55)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                    <!-- Left eye -->
+                    <ellipse cx="45" cy="44" rx="5.5" ry="4" fill="rgba(201,209,255,0.55)"/>
+                    <circle cx="45" cy="44" r="2.2" fill="rgba(201,209,255,0.9)"/>
+                    <!-- Right eye -->
+                    <ellipse cx="75" cy="44" rx="5.5" ry="4" fill="rgba(201,209,255,0.55)"/>
+                    <circle cx="75" cy="44" r="2.2" fill="rgba(201,209,255,0.9)"/>
+                    <!-- Nose bridge -->
+                    <path d="M60 48 L57 60 Q60 63 63 60 L60 48" stroke="rgba(201,209,255,0.35)" stroke-width="1.3" fill="none"/>
+                    <!-- Mouth -->
+                    <path d="M48 70 Q60 80 72 70" stroke="rgba(201,209,255,0.6)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <!-- Ear left -->
+                    <path d="M24 46 Q19 52 22 60 Q25 66 29 60" stroke="rgba(201,209,255,0.25)" stroke-width="1.5" fill="none"/>
+                    <!-- Ear right -->
+                    <path d="M96 46 Q101 52 98 60 Q95 66 91 60" stroke="rgba(201,209,255,0.25)" stroke-width="1.5" fill="none"/>
+                  </svg>
+                </div>
+                <!-- Scan sweep -->
+                <div class="bio-sweep" id="bio-sweep"></div>
+              </div>
+              <!-- Oval border ring -->
+              <div class="bio-ring" id="bio-ring"></div>
+              <!-- Corner brackets -->
+              <div class="bio-br tl"></div>
+              <div class="bio-br tr"></div>
+              <div class="bio-br bl"></div>
+              <div class="bio-br br"></div>
+            </div>
+
+            <div class="bio-status" id="bio-status-txt">Scanning face…</div>
+            <div class="bio-hint">Keep your face inside the frame</div>
+            <div class="bio-dots">
+              <div class="bio-dot"></div>
+              <div class="bio-dot"></div>
+              <div class="bio-dot"></div>
+            </div>
+
+            <!-- Verified overlay -->
+            <div class="bio-ok" id="bio-ok">
+              <div class="bio-grid"></div>
+              <div class="bio-ok-ring">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 13l4 4L19 7" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="bio-ok-title">Face Verified</div>
+              <div class="bio-ok-sub">99.7% confidence · Liveness confirmed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Screen 5: Access + Privacy ───────── -->
+        <div class="phone-screen" id="ps5">
+          <div class="access-body">
+            <div style="display:flex;align-items:center;gap:5px;width:100%;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#c9d1ff;"></div>
+              <span style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;text-transform:uppercase;">Access Granted</span>
+            </div>
+            <div class="big-check" id="bigcheck">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="ps-title" style="text-align:center;">Welcome, Ahmed!</div>
+            <div class="ps-sub"   style="text-align:center;">Identity verified · Access granted</div>
+            <div class="user-chip">
+              <div class="u-avatar">A</div>
+              <div>
+                <div class="u-name">Ahmed Al Mansouri</div>
+                <div class="u-tag"><div class="u-tag-dot"></div>KYC Complete · Verified</div>
+              </div>
+            </div>
+            <div class="priv-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:1px;">
+                <path d="M12 3l7 3v5c0 4.6-3 8.8-7 10-4-1.2-7-5.4-7-10V6l7-3z" stroke="#94a3b8" stroke-width="1.8"/>
+              </svg>
+              <div>
+                <p>Your raw data was deleted immediately after verification.</p>
+                <div class="priv-pills">
+                  <div class="priv-pill">Zero storage</div>
+                  <div class="priv-pill">GDPR</div>
+                  <div class="priv-pill">eIDAS 2.0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /phone-content -->
+    </div><!-- /phone -->
+  </div><!-- /phone-panel -->
+
+</div><!-- /demo-card -->
+
+<div class="nav-row">
+  <button class="nav-btn ghost" id="btn-back" onclick="goTo(cur-1)" style="visibility:hidden">← Back</button>
+  <div class="dots">
+    <div class="dot active" onclick="goTo(1)"></div>
+    <div class="dot"        onclick="goTo(2)"></div>
+    <div class="dot"        onclick="goTo(3)"></div>
+    <div class="dot"        onclick="goTo(4)"></div>
+    <div class="dot"        onclick="goTo(5)"></div>
+  </div>
+  <button class="nav-btn" id="btn-next" onclick="goTo(cur+1)">Next →</button>
+</div>
+
+<script>
+  let cur = 1, timer = null;
+  const LABELS = ['',
+    'Step 1 of 5 — Website Login',
+    'Step 2 of 5 — Age Verification',
+    'Step 3 of 5 — ID Document Scan',
+    'Step 4 of 5 — Biometric Verification',
+    'Step 5 of 5 — Access Granted'
+  ];
+  const DELAYS = [0, 4000, 4500, 4500, 7000, 6000];
+
+  function goTo(step) {
+    step = ((step - 1 + 5) % 5) + 1;
+    clearTimeout(timer);
+
+    ['ic','ps'].forEach(p => {
+      const prev = document.getElementById(p + cur);
+      const next = document.getElementById(p + step);
+      if (prev) { prev.classList.remove('active'); prev.classList.add('leaving'); setTimeout(() => prev.classList.remove('leaving'), 450); }
+      if (next) next.classList.add('active');
+    });
+
+    cur = step;
+    document.getElementById('step-label').textContent = LABELS[step];
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i + 1 === step));
+    document.getElementById('btn-back').style.visibility = step === 1 ? 'hidden' : 'visible';
+    document.getElementById('btn-next').textContent = step === 5 ? 'Restart ↺' : 'Next →';
+
+    if (step === 2) animS2();
+    if (step === 3) animS3();
+    if (step === 4) animS4();
+    if (step === 5) animS5();
+
+    timer = setTimeout(() => goTo(step + 1), DELAYS[step]);
+  }
+
+  function animS2() {
+    const cb = document.getElementById('age-cb');
+    cb.classList.remove('checked'); cb.innerHTML = '';
+    setTimeout(() => {
+      cb.classList.add('checked');
+      cb.innerHTML = '<svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5 10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }, 1700);
+  }
+
+  function animS3() {
+    document.getElementById('idverified').style.display = 'none';
+    document.getElementById('scanline').style.display   = 'block';
+    setTimeout(() => {
+      if (cur !== 3) return;
+      document.getElementById('scanline').style.display   = 'none';
+      document.getElementById('idverified').style.display = 'flex';
+    }, 2400);
+  }
+
+  function animS4() {
+    // Reset bio state
+    const bioOk = document.getElementById('bio-ok');
+    const bioRing = document.getElementById('bio-ring');
+    const sweep = document.getElementById('bio-sweep');
+    bioOk.classList.remove('show');
+    bioRing.classList.remove('success');
+    sweep.style.display = 'block';
+    document.getElementById('bio-status-txt').textContent = 'Scanning face…';
+
+    // 3.5s — ring turns green
+    setTimeout(() => {
+      if (cur !== 4) return;
+      bioRing.classList.add('success');
+      document.getElementById('bio-status-txt').textContent = 'Verified ✓';
+    }, 3500);
+
+    // 4.2s — show verified overlay
+    setTimeout(() => {
+      if (cur !== 4) return;
+      sweep.style.display = 'none';
+      bioOk.classList.add('show');
+    }, 4200);
+  }
+
+  function animS5() {
+    const ring = document.getElementById('bigcheck');
+    ring.style.animation = 'none'; void ring.offsetHeight; ring.style.animation = '';
+  }
+
+  timer = setTimeout(() => goTo(2), DELAYS[1]);
+</script>
+</body>
+</html>
