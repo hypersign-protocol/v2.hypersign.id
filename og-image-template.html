@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OG Image Template – Hypersign</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ── Exact CSS vars from the site ─────────────────────────── */
+    :root {
+      --foreground: #303d5f;
+      --text-body:  #475569;
+      --text-muted: #64748b;
+      --border:     #e5e7eb;
+      --soft:       #f9fafb;
+      --primary:    #404462;
+      --brand-light:#c9d1ff;
+      --brand-mid:  #303d5f;
+      --brand-dark: #191c27;
+      --shadow-card: 0 8px 24px rgba(15,23,42,0.07);
+    }
+
+    /* ── Canvas: exactly 1200 × 630 ───────────────────────────── */
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      color: var(--foreground);
+
+      /* Replicate --gradient-mesh-hero from index.css */
+      background:
+        radial-gradient(ellipse 80% 60% at 0% 0%,   color-mix(in srgb, #c9d1ff 27%, transparent), transparent 70%),
+        radial-gradient(ellipse 70% 55% at 100% 0%,  color-mix(in srgb, #303d5f 19%, transparent), transparent 68%),
+        radial-gradient(ellipse 65% 50% at 50% 100%, color-mix(in srgb, #c9d1ff 38%, transparent), transparent 65%),
+        radial-gradient(ellipse 50% 40% at 15% 85%,  color-mix(in srgb, #191c27 12%, transparent), transparent 72%),
+        #ffffff;
+
+      display: flex;
+      align-items: stretch;
+    }
+
+    /* ── Layout ────────────────────────────────────────────────── */
+    .wrap {
+      width: 1200px;
+      height: 630px;
+      display: flex;
+      position: relative;
+    }
+
+    /* LEFT column */
+    .left {
+      flex: 0 0 590px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px 56px 44px 56px;
+    }
+
+    /* Logo row */
+    .logo-row {
+      display: flex;
+      align-items: center;
+    }
+    .logo-row img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Middle block */
+    .mid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      width: fit-content;
+    }
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+    }
+
+    /* Headline */
+    h1 {
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.5px;
+      color: var(--foreground);
+    }
+
+    /* Subtext */
+    .sub {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.55;
+      color: var(--text-body);
+      max-width: 440px;
+    }
+
+    /* Stats row */
+    .stats {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-top: 4px;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-right: 24px;
+    }
+    .stat + .stat {
+      padding-left: 24px;
+      border-left: 1px solid var(--border);
+    }
+    .stat-num {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .stat-lbl {
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    /* Bottom row */
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .url {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 9px 20px;
+      letter-spacing: 0.1px;
+    }
+
+    /* ── RIGHT column ──────────────────────────────────────────── */
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 48px;
+    }
+
+    /* wrapper so the two groups center together */
+    .cards-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* verification card */
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow-card);
+      padding: 18px 20px;
+      width: 256px;
+      flex-shrink: 0;
+    }
+
+    .card-hdr {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .card-icon {
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .card-icon svg { width: 15px; height: 15px; }
+    .card-title { font-size: 12px; font-weight: 500; color: var(--foreground); line-height: 1.3; }
+    .card-sub   { font-size: 10.5px; font-weight: 300; color: var(--text-muted); margin-top: 1px; }
+    .pill {
+      margin-left: auto;
+      font-size: 9.5px; font-weight: 500;
+      border-radius: 999px; padding: 2px 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .pill-green { background: #dcfce7; color: #15803d; }
+
+    .card-hr { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
+
+    .card-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 0;
+      font-size: 11.5px;
+    }
+    .row-lbl { color: var(--text-muted); font-weight: 300; }
+    .row-ok   { color: #16a34a; font-weight: 500; }
+    .row-hi   { color: var(--primary); font-weight: 500; }
+    .row-zero { color: #dc2626; font-weight: 600; }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      font-size: 9.5px;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* second (narrower) card  */
+    .card-b {
+      width: 210px;
+    }
+    .card-b .card-title { font-size: 11.5px; }
+    .card-b .card-row   { font-size: 11px; }
+    .big-num {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--foreground);
+      letter-spacing: -0.5px;
+      margin: 4px 0 2px;
+    }
+    .sm-note {
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+
+    /* vertical stack for right panel — height matches main card */
+    .card-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-self: stretch;
+    }
+    .card-stack .card-b {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    /* push footer to bottom within flex card */
+    .card-b .card-footer { margin-top: auto; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── LEFT ────────────────────────────────────────────────── -->
+  <div class="left">
+
+    <!-- Logo -->
+    <div class="logo-row">
+      <img src="./imports/logo.png" alt="Hypersign" />
+    </div>
+
+    <!-- Headline block -->
+    <div class="mid">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Verify once. Use everywhere.
+      </div>
+
+      <h1>Identity infrastructure<br>for modern compliance</h1>
+
+      <p class="sub">
+        One platform for KYC, KYB, AML, consent, and verifiable credentials. Eliminate repeated verification and reduce compliance costs.
+      </p>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num">25%</span>
+          <span class="stat-lbl">Fraud Reduction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">75–80%</span>
+          <span class="stat-lbl">Faster Check-ins</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">58K+</span>
+          <span class="stat-lbl">Users Verified</span>
+        </div>
+      </div>
+
+      <!-- CTA right below stats -->
+      <div style="margin-top: 4px;">
+        <span class="cta">Book a Demo →</span>
+      </div>
+    </div>
+
+    <!-- Footer: just the URL -->
+    <div class="bottom">
+      <span class="url">hypersign.id</span>
+    </div>
+
+  </div>
+
+  <!-- ── RIGHT ───────────────────────────────────────────────── -->
+  <div class="right">
+  <div class="cards-group">
+
+    <!-- Main card: Verification Request -->
+    <div class="card">
+      <div class="card-hdr">
+        <div class="card-icon">
+          <svg viewBox="0 0 15 15" fill="none" stroke="#303d5f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.5 1.5a4 4 0 014 4c0 2.2-1.3 4-2.8 5.5"/>
+            <path d="M7.5 1.5a4 4 0 00-4 4c0 2.2 1.3 4 2.8 5.5"/>
+            <path d="M5.5 5.5a2 2 0 014 0c0 1.5-1 3-2 4.5"/>
+            <circle cx="7.5" cy="5.5" r="0.7" fill="#303d5f"/>
+          </svg>
+        </div>
+        <div>
+          <div class="card-title">Verification Request</div>
+          <div class="card-sub">Web3 Protocol · Privacy-First</div>
+        </div>
+        <span class="pill pill-green">● Active</span>
+      </div>
+      <div class="card-hr"></div>
+      <div class="card-row"><span class="row-lbl">OCR Result</span><span class="row-ok">✓ Extracted</span></div>
+      <div class="card-row"><span class="row-lbl">Liveness Score</span><span class="row-ok">✓ 0.97</span></div>
+      <div class="card-row"><span class="row-lbl">Face Match</span><span class="row-ok">✓ Confirmed</span></div>
+      <div class="card-row"><span class="row-lbl">PII Fields Stored</span><span class="row-zero">0</span></div>
+      <div class="card-hr" style="margin-top:10px;"></div>
+      <div class="card-footer">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="#16a34a" stroke-width="1.4" stroke-linecap="round"><rect x="1" y="3" width="9" height="7" rx="1.5"/><path d="M3.5 3V2a2 2 0 014 0v1"/></svg>
+        No raw identity data retained · Proof only
+      </div>
+    </div>
+
+    <!-- Stack: two smaller cards -->
+    <div class="card-stack">
+
+      <!-- Business Verification -->
+      <div class="card card-b">
+        <div class="card-hdr" style="margin-bottom: 8px;">
+          <div class="card-icon">
+            <svg viewBox="0 0 15 15" fill="none" stroke="#303d5f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="11" height="9" rx="1.2"/>
+              <path d="M5 5V3.5a2.5 2.5 0 015 0V5"/>
+              <path d="M5.5 9h4M7.5 8v2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="card-title">Business Verification</div>
+            <div class="card-sub">KYB · Audit-Ready</div>
+          </div>
+        </div>
+        <div class="big-num">47 min</div>
+        <div class="sm-note">Avg. turnaround · 100% audit coverage</div>
+        <div class="card-hr" style="margin: 10px 0;"></div>
+        <div class="card-row"><span class="row-lbl">AML Screening</span><span class="row-ok">✓ All clear</span></div>
+        <div class="card-row"><span class="row-lbl">UBO Mapping</span><span class="row-ok">✓ 2 found</span></div>
+      </div>
+
+      <!-- Recovery Claim -->
+      <div class="card card-b">
+        <div class="card-hdr" style="margin-bottom: 8px;">
+          <div class="card-icon">
+            <svg viewBox="0 0 15 15" fill="none" stroke="#303d5f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="7.5" cy="7.5" r="5.5"/>
+              <path d="M5 7.5l2 2 3.5-3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="card-title">Recovery Claim</div>
+            <div class="card-sub">DeFi Protocol</div>
+          </div>
+        </div>
+        <div class="card-hr" style="margin: 8px 0;"></div>
+        <div class="card-row"><span class="row-lbl">Identity Check</span><span class="row-ok">✓ Passed</span></div>
+        <div class="card-row"><span class="row-lbl">Fraud Attempts</span><span class="row-zero">0 passed</span></div>
+        <div class="card-row"><span class="row-lbl">Claim Status</span><span class="row-hi">✓ Authorized</span></div>
+        <div class="card-footer" style="margin-top: 8px;">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="#303d5f" stroke-width="1.4" stroke-linecap="round"><path d="M5.5 1v2M5.5 8v2M1 5.5h2M8 5.5h2"/><circle cx="5.5" cy="5.5" r="2.5"/></svg>
+          Tamper-evident audit trail
+        </div>
+      </div>
+
+    </div><!-- /.card-stack -->
+  </div><!-- /.cards-group -->
+  </div><!-- /.right -->
+
+</div>
+</body>
+</html>

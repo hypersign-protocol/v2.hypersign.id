@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hypersign — Identity Flow</title>
+  <title>Hypersign Identity Flow</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -39,7 +39,7 @@
       box-shadow: 0 40px 100px rgba(15,23,42,.2), 0 0 0 1px rgba(15,23,42,.07);
     }
 
-    /* ══ LEFT — dark info panel ═══════════════════════════ */
+    /* ══ LEFT dark info panel ═══════════════════════════ */
     .info-panel {
       background: #191c27;
       position: relative; overflow: hidden;
@@ -51,7 +51,7 @@
         radial-gradient(ellipse 50% 45% at 100% 100%, rgba(48,61,95,.5),   transparent 70%);
     }
 
-    /* Logo — fixed, always visible */
+    /* Logo fixed, always visible */
     .info-logo {
       position: absolute; top: 28px; left: 40px; z-index: 10;
       display: flex; align-items: center;
@@ -101,7 +101,7 @@
     .idot { width: 6px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.18); transition: all .3s; }
     .idot.a { width: 22px; background: var(--brand-light); }
 
-    /* ══ RIGHT — phone panel ══════════════════════════════ */
+    /* ══ RIGHT phone panel ══════════════════════════════ */
     .phone-panel {
       background: linear-gradient(148deg, #dce3ff 0%, #c7d1ff 100%);
       display: flex; align-items: center; justify-content: center;
@@ -253,7 +253,7 @@
     .bio-vp {
       position: relative; width: 148px; height: 176px; margin-bottom: 22px;
     }
-    /* Clipped oval — image + scan live here */
+    /* Clipped oval image + scan live here */
     .bio-clip {
       position: absolute; inset: 0;
       overflow: hidden;
@@ -376,12 +376,12 @@
 </head>
 <body>
 
-<div class="step-label" id="step-label">Step 1 of 5 — Website Login</div>
+<div class="step-label" id="step-label">Step 1 of 5 Website Login</div>
 
 <div class="demo-card">
 
   <!-- ═══════════════════════════════════════
-       LEFT — info panel
+       LEFT info panel
   ═══════════════════════════════════════ -->
   <div class="info-panel">
 
@@ -415,7 +415,7 @@
         </svg>
       </div>
       <h2 class="info-title">Prove you're<br>18+, privately.</h2>
-      <p class="info-sub">No birthday stored. No data shared. Hypersign sends only an eligibility result — yes or no.</p>
+      <p class="info-sub">No birthday stored. No data shared. Hypersign sends only an eligibility result yes or no.</p>
       <div class="info-tag"><div class="tag-dot"></div>Zero personal data to the website</div>
       <div class="info-dots"><div class="idot"></div><div class="idot a"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
     </div>
@@ -432,7 +432,7 @@
       </div>
       <h2 class="info-title">Emirates ID<br>verified in<br>seconds.</h2>
       <p class="info-sub">OCR extraction and authenticity check. Name, DOB, and ID number confirmed on-device.</p>
-      <div class="info-tag"><div class="tag-dot"></div>UAE · 220+ countries supported</div>
+      <div class="info-tag"><div class="tag-dot"></div>UAE · 189+ countries supported</div>
       <div class="info-dots"><div class="idot"></div><div class="idot"></div><div class="idot a"></div><div class="idot"></div><div class="idot"></div></div>
     </div>
 
@@ -462,7 +462,7 @@
         </svg>
       </div>
       <h2 class="info-title">Your data?<br>Already gone.</h2>
-      <p class="info-sub">Hypersign never stores raw identity data. Everything is cryptographically erased. Zero copies retained — ever.</p>
+      <p class="info-sub">Hypersign never stores raw identity data. Everything is cryptographically erased. Zero copies retained ever.</p>
       <div class="info-tag"><div class="tag-dot"></div>GDPR · eIDAS 2.0 · Privacy by design</div>
       <div class="info-dots"><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot a"></div></div>
     </div>
@@ -470,7 +470,7 @@
   </div><!-- /info-panel -->
 
   <!-- ═══════════════════════════════════════
-       RIGHT — phone panel
+       RIGHT phone panel
   ═══════════════════════════════════════ -->
   <div class="phone-panel">
     <div class="phone">
@@ -590,7 +590,7 @@
             </div>
             <div class="v-badge" id="idverified" style="display:none;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#22c55e"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
-              ID Verified — Ahmed Al Mansouri
+              ID Verified Ahmed Al Mansouri
             </div>
           </div>
         </div>
@@ -726,11 +726,11 @@
 <script>
   let cur = 1, timer = null;
   const LABELS = ['',
-    'Step 1 of 5 — Website Login',
-    'Step 2 of 5 — Age Verification',
-    'Step 3 of 5 — ID Document Scan',
-    'Step 4 of 5 — Biometric Verification',
-    'Step 5 of 5 — Access Granted'
+    'Step 1 of 5 Website Login',
+    'Step 2 of 5 Age Verification',
+    'Step 3 of 5 ID Document Scan',
+    'Step 4 of 5 Biometric Verification',
+    'Step 5 of 5 Access Granted'
   ];
   const DELAYS = [0, 4000, 4500, 4500, 7000, 6000];
 
@@ -788,14 +788,14 @@
     sweep.style.display = 'block';
     document.getElementById('bio-status-txt').textContent = 'Scanning face…';
 
-    // 3.5s — ring turns green
+    // 3.5s ring turns green
     setTimeout(() => {
       if (cur !== 4) return;
       bioRing.classList.add('success');
       document.getElementById('bio-status-txt').textContent = 'Verified ✓';
     }, 3500);
 
-    // 4.2s — show verified overlay
+    // 4.2s show verified overlay
     setTimeout(() => {
       if (cur !== 4) return;
       sweep.style.display = 'none';
