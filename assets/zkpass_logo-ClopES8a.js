@@ -1,0 +1,1 @@
+const s="/imports/Backed-by-PWC.png",o="/imports/BackedBy-DSCI.png",t="/imports/Backed-By-Both%20of%20us.png",p="/imports/Backed-By-Start2.png",r="/imports/DIF-BFvM2X8b.png",_="/imports/cheqd-CKvL4BCh.png",i="/imports/concordium.png",a="/imports/creative%20Ideaz-C4_aG7d3.png",m="/imports/zkpass_logo.jpg";export{s as _,o as a,t as b,p as c,r as d,_ as e,i as f,a as g,m as h};
