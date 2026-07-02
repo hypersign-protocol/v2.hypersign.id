@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Hypersign | Identity Infrastructure for Modern Compliance</title>
-    <meta name="description" content="Hypersign is identity infrastructure KYC, KYB, AML, biometric liveness, reusable credentials, consent management, and encrypted identity vaults in one platform. 30% cheaper than Persona. eIDAS 2.0, GDPR, and DPDP ready. 189+ countries." />
+    <meta name="description" content="KYC, KYB, AML, biometrics, consent, and encrypted identity vaults in one platform. 30% cheaper than Persona. eIDAS 2.0, GDPR, DPDP ready. 189+ countries." />
     <meta name="keywords" content="identity infrastructure, KYC API, reusable KYC, KYB verification, AML screening, biometric verification, liveness detection, consent management, eIDAS 2.0, GDPR compliant, DPDP compliance, identity verification, verifiable credentials, EUDI wallet, identity vault, compliance automation, identity orchestration" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Hypersign | Identity Infrastructure for Modern Compliance" />
@@ -15,37 +15,76 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Hypersign | Identity Infrastructure for Modern Compliance" />
+    <meta property="og:site_name" content="Hypersign" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Hypersign | Identity Infrastructure for Modern Compliance" />
     <meta name="twitter:description" content="KYC, KYB, AML, reusable credentials, consent, and encrypted vaults in one API. eIDAS 2.0, GDPR, and DPDP ready." />
     <meta name="twitter:image" content="https://hypersign.id/opengraph.jpg" />
     <meta name="twitter:image:alt" content="Hypersign | Identity Infrastructure for Modern Compliance" />
+    <meta name="twitter:site" content="@hypersignchain" />
     <link rel="canonical" href="https://hypersign.id" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Hypersign",
-      "alternateName": "Hypermine Technologies",
-      "url": "https://hypersign.id",
-      "description": "Identity infrastructure for modern compliance. KYC, KYB, AML, consent management, encrypted identity vaults, and reusable verifiable credentials built for eIDAS 2.0, GDPR, and DPDP.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "vikram@hypermine.in",
-        "contactType": "sales"
-      },
-      "sameAs": [
-        "https://linkedin.com/company/hypersign-id",
-        "https://github.com/hypersign-protocol"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://hypersign.id/#organization",
+          "name": "Hypersign",
+          "alternateName": "Hypermine Technologies",
+          "url": "https://hypersign.id",
+          "description": "Identity infrastructure for modern compliance. KYC, KYB, AML, consent management, encrypted identity vaults, and reusable verifiable credentials built for eIDAS 2.0, GDPR, and DPDP.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://hypersign.id/imports/logo.png"
+          },
+          "sameAs": [
+            "https://x.com/hypersignchain",
+            "https://linkedin.com/company/hypersign-id",
+            "https://github.com/hypersign-protocol"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://hypersign.id/#website",
+          "url": "https://hypersign.id",
+          "name": "Hypersign",
+          "publisher": { "@id": "https://hypersign.id/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://hypersign.id/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://hypersign.id/#product",
+          "name": "Hypersign Identity Platform",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Full-stack identity infrastructure covering KYC, KYB, AML screening, biometric verification, consent management, encrypted identity vaults, and reusable verifiable credentials.",
+          "offers": {
+            "@type": "Offer",
+            "price": "500",
+            "priceCurrency": "USD",
+            "description": "Starter plan — 100 KYC checks, KYB, and compliance infrastructure"
+          },
+          "provider": { "@id": "https://hypersign.id/#organization" }
+        }
       ]
     }
     </script>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="wH+AaZhmgDt5/D8n89gq4Q" async></script>
-    <script type="module" crossorigin src="/assets/index-Ct76bpMF.js"></script>
+    <script type="module" crossorigin src="/assets/index-PicrQc0l.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vue-D5J7BkSA.js">
     <link rel="modulepreload" crossorigin href="/assets/icons-TzliWJRJ.js">
     <link rel="stylesheet" crossorigin href="/assets/index-BaWFryAO.css">
