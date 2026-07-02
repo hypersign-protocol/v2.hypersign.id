@@ -1,0 +1,47 @@
+# Hypersign — Identity Infrastructure for Modern Compliance
+
+Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, biometric verification, consent management, encrypted identity vaults, and reusable verifiable credentials. It is built for compliance teams and product teams in fintech, banking, crypto, and regulated industries. Hypersign is eIDAS 2.0, GDPR, and India DPDP compliant and supports identity verification in 189+ countries.
+
+## Product
+
+- [Platform Overview](https://hypersign.id/platform): End-to-end identity infrastructure — document capture, biometrics, KYC/KYB, AML, consent, and reusable credentials in one integrated stack.
+- [ID Verification](https://hypersign.id/id-verification): OCR, MRZ extraction, VIZ parsing, and fraud detection across 189+ countries and document types.
+- [Biometric Verification](https://hypersign.id/biometric-verification): Active liveness detection, face-match against document photo, and anti-spoofing (deepfake, masks, screen replays).
+- [KYB Platform](https://hypersign.id/kyb-platform): Business onboarding with company document collection, director verification, UBO mapping, shareholder KYC, and AML monitoring.
+- [AML Screening](https://hypersign.id/aml-screening): Real-time sanctions, PEP, and adverse media screening with ongoing monitoring.
+- [Reusable KYC](https://hypersign.id/reusable-kyc): Users verify once; cryptographically signed verifiable credentials are reused across platforms — reducing drop-off and per-user cost.
+- [Consent Management](https://hypersign.id/consent-management): Explicit, timestamped consent capture at every verification step with full audit logs.
+- [Identity Vault](https://hypersign.id/identity-vault): User-controlled encrypted storage for identity data with GDPR right-to-erasure support.
+- [Verifiable Credentials](https://hypersign.id/verifiable-credentials): eIDAS 2.0-aligned, EUDI Wallet-compatible credentials with selective disclosure.
+- [Decision Engine](https://hypersign.id/decision-engine): Configurable risk scoring and orchestration across the full verification stack.
+- [Transaction Monitoring](https://hypersign.id/transaction-monitoring): Ongoing monitoring for suspicious activity post-onboarding.
+- [Age Verification](https://hypersign.id/age-verification): Privacy-preserving age checks without storing raw identity data.
+- [Magic Link KYC](https://hypersign.id/magic-link-kyc): Send a verification link to users; no SDK or app install required.
+- [White Label](https://hypersign.id/white-label): Fully branded identity verification flows for enterprises.
+- [Verified AI & Human](https://hypersign.id/verified-ai-human): Verify whether an entity is a real human or an AI agent.
+
+## Solutions
+
+- [Solutions Overview](https://hypersign.id/solutions): Cross-industry identity orchestration for onboarding, compliance, and fraud prevention.
+- [Fintech](https://hypersign.id/fintech): KYC, AML, and reusable credentials for neobanks, payment platforms, and crypto exchanges.
+- [Industries](https://hypersign.id/industries): Identity infrastructure for banking, insurance, healthcare, real estate, and more.
+- [Global Presence](https://hypersign.id/global-presence): Coverage across 189+ countries with localised document and compliance support.
+- [Marketplace](https://hypersign.id/marketplace): Integrations and partner ecosystem.
+
+## Pricing
+
+- [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Approximately 30% cheaper than Persona.
+
+## Company
+
+- [About](https://hypersign.id/about): Team, mission, and backers (DSCI, PWC, Start2, and others).
+- [Case Studies](https://hypersign.id/case-studies): Real-world deployments including UAE banking.
+- [Resources](https://hypersign.id/resources): Blog posts, guides, and compliance documentation.
+- [Book a Demo](https://hypersign.id/book-demo): Schedule a live walkthrough with the Hypersign team.
+
+## Legal
+
+- [Privacy Policy](https://hypersign.id/privacy-policy)
+- [Terms of Service](https://hypersign.id/terms)
+- [Cookie Policy](https://hypersign.id/cookies-policy)
+- [Master Service Agreement](https://hypersign.id/master-service-agreement)
