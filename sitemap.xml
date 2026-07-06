@@ -134,6 +134,38 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Comparisons -->
+  <url>
+    <loc>https://hypersign.id/vs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/vs/sumsub</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/vs/persona</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/vs/signzy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/vs/hyperverge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/vs/polygon-id</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Case Studies -->
   <url>
     <loc>https://hypersign.id/case-studies</loc>
