@@ -20,8 +20,8 @@
     "/assets/zkpass_logo-ClopES8a.js"
   ],
   "../../../../imports/Garden-CHTs90Z6.png": [
-    "/assets/HomePage-Bga6dGcL.js",
-    "/assets/HomePage-D9Io47zI.css"
+    "/assets/HomePage-ComdC_zo.js",
+    "/assets/HomePage-C6Y45U_u.css"
   ],
   "../../../../imports/cheqd-CKvL4BCh.png": [
     "/assets/zkpass_logo-ClopES8a.js"
@@ -34,8 +34,8 @@
   ],
   "../../../../imports/logo.png": [],
   "../../../../imports/quillAudit-5yyue2b8.jpg": [
-    "/assets/HomePage-Bga6dGcL.js",
-    "/assets/HomePage-D9Io47zI.css"
+    "/assets/HomePage-ComdC_zo.js",
+    "/assets/HomePage-C6Y45U_u.css"
   ],
   "../../../../imports/zkpass_logo.jpg": [
     "/assets/zkpass_logo-ClopES8a.js"
@@ -4954,15 +4954,15 @@
   "src/components/layout/Footer.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/layout/Navbar.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/platform/PlatformFeatureVisual.vue": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=style&index=0&scoped=8940355e&lang.css": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/index.css": [],
@@ -5033,16 +5033,16 @@
     "/assets/BiometricVerificationPage-CdlbwfMA.css"
   ],
   "src/pages/BlogDetailPage.vue": [
-    "/assets/BlogDetailPage-BkKh4nhu.js",
-    "/assets/BlogDetailPage-Bivf_X_d.css"
+    "/assets/BlogDetailPage-CAYX31Z_.js",
+    "/assets/BlogDetailPage-BWUaYKSt.css"
   ],
   "src/pages/BlogDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/BlogDetailPage-BkKh4nhu.js",
-    "/assets/BlogDetailPage-Bivf_X_d.css"
+    "/assets/BlogDetailPage-CAYX31Z_.js",
+    "/assets/BlogDetailPage-BWUaYKSt.css"
   ],
-  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=e4b63f5a&lang.css": [
-    "/assets/BlogDetailPage-BkKh4nhu.js",
-    "/assets/BlogDetailPage-Bivf_X_d.css"
+  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=ed3aff55&lang.css": [
+    "/assets/BlogDetailPage-CAYX31Z_.js",
+    "/assets/BlogDetailPage-BWUaYKSt.css"
   ],
   "src/pages/BookDemoPage.vue": [
     "/assets/BookDemoPage-DQCuUDx6.js"
@@ -5075,15 +5075,15 @@
     "/assets/CaseStudiesPage-q21OMu_L.css"
   ],
   "src/pages/CaseStudyDetailPage.vue": [
-    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
+    "/assets/CaseStudyDetailPage-BuM9pua9.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
+    "/assets/CaseStudyDetailPage-BuM9pua9.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=style&index=0&scoped=111092a8&lang.css": [
-    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
+    "/assets/CaseStudyDetailPage-BuM9pua9.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/ConsentManagementPage.vue": [
@@ -5171,28 +5171,28 @@
     "/assets/FintechPage-UWjJjqNN.css"
   ],
   "src/pages/GlobalPresencePage.vue": [
-    "/assets/GlobalPresencePage-Cb8mA0JU.js",
-    "/assets/GlobalPresencePage-BnyO_JjM.css"
+    "/assets/GlobalPresencePage-CV_92NyZ.js",
+    "/assets/GlobalPresencePage-Db1o8qEC.css"
   ],
   "src/pages/GlobalPresencePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/GlobalPresencePage-Cb8mA0JU.js",
-    "/assets/GlobalPresencePage-BnyO_JjM.css"
+    "/assets/GlobalPresencePage-CV_92NyZ.js",
+    "/assets/GlobalPresencePage-Db1o8qEC.css"
   ],
-  "src/pages/GlobalPresencePage.vue?vue&type=style&index=0&scoped=4381dcbc&lang.css": [
-    "/assets/GlobalPresencePage-Cb8mA0JU.js",
-    "/assets/GlobalPresencePage-BnyO_JjM.css"
+  "src/pages/GlobalPresencePage.vue?vue&type=style&index=0&scoped=f5c0418c&lang.css": [
+    "/assets/GlobalPresencePage-CV_92NyZ.js",
+    "/assets/GlobalPresencePage-Db1o8qEC.css"
   ],
   "src/pages/HomePage.vue": [
-    "/assets/HomePage-Bga6dGcL.js",
-    "/assets/HomePage-D9Io47zI.css"
+    "/assets/HomePage-ComdC_zo.js",
+    "/assets/HomePage-C6Y45U_u.css"
   ],
   "src/pages/HomePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HomePage-Bga6dGcL.js",
-    "/assets/HomePage-D9Io47zI.css"
+    "/assets/HomePage-ComdC_zo.js",
+    "/assets/HomePage-C6Y45U_u.css"
   ],
-  "src/pages/HomePage.vue?vue&type=style&index=0&scoped=84fde5b2&lang.css": [
-    "/assets/HomePage-Bga6dGcL.js",
-    "/assets/HomePage-D9Io47zI.css"
+  "src/pages/HomePage.vue?vue&type=style&index=0&scoped=21ca3a83&lang.css": [
+    "/assets/HomePage-ComdC_zo.js",
+    "/assets/HomePage-C6Y45U_u.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue": [
     "/assets/HyperVergeComparisonPage-D3oB7JKj.js",
@@ -5333,31 +5333,31 @@
     "/assets/NotFoundPage-BEcLSF8_.js"
   ],
   "src/pages/OnePagerPage.vue": [
-    "/assets/OnePagerPage-BT1Jh-GP.js",
+    "/assets/OnePagerPage-DhU1nwoa.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPage-BT1Jh-GP.js",
+    "/assets/OnePagerPage-DhU1nwoa.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=style&index=0&scoped=50ec27e8&lang.css": [
-    "/assets/OnePagerPage-BT1Jh-GP.js",
+    "/assets/OnePagerPage-DhU1nwoa.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPrintPage.vue": [
-    "/assets/OnePagerPrintPage-DlwtAgl0.js",
+    "/assets/OnePagerPrintPage-wb2HImRP.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPrintPage-DlwtAgl0.js",
+    "/assets/OnePagerPrintPage-wb2HImRP.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=0&lang.css": [
-    "/assets/OnePagerPrintPage-DlwtAgl0.js",
+    "/assets/OnePagerPrintPage-wb2HImRP.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=1&scoped=731297d6&lang.css": [
-    "/assets/OnePagerPrintPage-DlwtAgl0.js",
+    "/assets/OnePagerPrintPage-wb2HImRP.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/PersonaComparisonPage.vue": [
@@ -5373,15 +5373,15 @@
     "/assets/PersonaComparisonPage-DqkrwQNf.css"
   ],
   "src/pages/PlatformPage.vue": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=style&index=0&scoped=4a98e7cb&lang.css": [
-    "/assets/PlatformPage-CFodq9C0.js",
+    "/assets/PlatformPage-qQchwPap.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PolygonIdComparisonPage.vue": [
@@ -5421,10 +5421,10 @@
     "/assets/PrivacyPolicyPage-MHDiukHc.css"
   ],
   "src/pages/ResourcesPage.vue": [
-    "/assets/ResourcesPage-Bw3RTbeW.js"
+    "/assets/ResourcesPage-CoIo_v5l.js"
   ],
   "src/pages/ResourcesPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/ResourcesPage-Bw3RTbeW.js"
+    "/assets/ResourcesPage-CoIo_v5l.js"
   ],
   "src/pages/ReusableKYCPage.vue": [
     "/assets/ReusableKYCPage-DBYXPgWJ.js",
