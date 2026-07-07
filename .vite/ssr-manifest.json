@@ -20,7 +20,7 @@
     "/assets/zkpass_logo-ClopES8a.js"
   ],
   "../../../../imports/Garden-CHTs90Z6.png": [
-    "/assets/HomePage-DO-ukLKs.js",
+    "/assets/HomePage-D9EbcV_V.js",
     "/assets/HomePage-BggyNm7i.css"
   ],
   "../../../../imports/cheqd-CKvL4BCh.png": [
@@ -34,7 +34,7 @@
   ],
   "../../../../imports/logo.png": [],
   "../../../../imports/quillAudit-5yyue2b8.jpg": [
-    "/assets/HomePage-DO-ukLKs.js",
+    "/assets/HomePage-D9EbcV_V.js",
     "/assets/HomePage-BggyNm7i.css"
   ],
   "../../../../imports/zkpass_logo.jpg": [
@@ -4953,15 +4953,15 @@
   "src/components/layout/Footer.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/layout/Navbar.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/platform/PlatformFeatureVisual.vue": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=style&index=0&scoped=cd9282fa&lang.css": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/index.css": [],
@@ -5032,15 +5032,15 @@
     "/assets/BiometricVerificationPage-CqwXEL__.css"
   ],
   "src/pages/BlogDetailPage.vue": [
-    "/assets/BlogDetailPage-5V6XL0q-.js",
+    "/assets/BlogDetailPage-DFcDHSUA.js",
     "/assets/BlogDetailPage-CBoDcRmt.css"
   ],
   "src/pages/BlogDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/BlogDetailPage-5V6XL0q-.js",
+    "/assets/BlogDetailPage-DFcDHSUA.js",
     "/assets/BlogDetailPage-CBoDcRmt.css"
   ],
   "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=757a5006&lang.css": [
-    "/assets/BlogDetailPage-5V6XL0q-.js",
+    "/assets/BlogDetailPage-DFcDHSUA.js",
     "/assets/BlogDetailPage-CBoDcRmt.css"
   ],
   "src/pages/BookDemoPage.vue": [
@@ -5074,15 +5074,15 @@
     "/assets/CaseStudiesPage-99zl_CTf.css"
   ],
   "src/pages/CaseStudyDetailPage.vue": [
-    "/assets/CaseStudyDetailPage-a0Nnm6Vr.js",
+    "/assets/CaseStudyDetailPage-C-GqvSti.js",
     "/assets/CaseStudyDetailPage-CiIWrPyO.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/CaseStudyDetailPage-a0Nnm6Vr.js",
+    "/assets/CaseStudyDetailPage-C-GqvSti.js",
     "/assets/CaseStudyDetailPage-CiIWrPyO.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=style&index=0&scoped=ee8cff64&lang.css": [
-    "/assets/CaseStudyDetailPage-a0Nnm6Vr.js",
+    "/assets/CaseStudyDetailPage-C-GqvSti.js",
     "/assets/CaseStudyDetailPage-CiIWrPyO.css"
   ],
   "src/pages/ComingSoonPage.vue": [
@@ -5164,28 +5164,28 @@
     "/assets/GlobalPresencePage-BnyO_JjM.css"
   ],
   "src/pages/HomePage.vue": [
-    "/assets/HomePage-DO-ukLKs.js",
+    "/assets/HomePage-D9EbcV_V.js",
     "/assets/HomePage-BggyNm7i.css"
   ],
   "src/pages/HomePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HomePage-DO-ukLKs.js",
+    "/assets/HomePage-D9EbcV_V.js",
     "/assets/HomePage-BggyNm7i.css"
   ],
   "src/pages/HomePage.vue?vue&type=style&index=0&scoped=f723721d&lang.css": [
-    "/assets/HomePage-DO-ukLKs.js",
+    "/assets/HomePage-D9EbcV_V.js",
     "/assets/HomePage-BggyNm7i.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue": [
-    "/assets/HyperVergeComparisonPage-em2D-Ux9.js",
-    "/assets/HyperVergeComparisonPage-DtRRqnxC.css"
+    "/assets/HyperVergeComparisonPage-C7D5Bnvv.js",
+    "/assets/HyperVergeComparisonPage-lDMVMxco.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HyperVergeComparisonPage-em2D-Ux9.js",
-    "/assets/HyperVergeComparisonPage-DtRRqnxC.css"
+    "/assets/HyperVergeComparisonPage-C7D5Bnvv.js",
+    "/assets/HyperVergeComparisonPage-lDMVMxco.css"
   ],
-  "src/pages/HyperVergeComparisonPage.vue?vue&type=style&index=0&scoped=808d3100&lang.css": [
-    "/assets/HyperVergeComparisonPage-em2D-Ux9.js",
-    "/assets/HyperVergeComparisonPage-DtRRqnxC.css"
+  "src/pages/HyperVergeComparisonPage.vue?vue&type=style&index=0&scoped=53637fe2&lang.css": [
+    "/assets/HyperVergeComparisonPage-C7D5Bnvv.js",
+    "/assets/HyperVergeComparisonPage-lDMVMxco.css"
   ],
   "src/pages/IdVerificationPage.vue": [
     "/assets/IdVerificationPage-Bz8LDo_T.js",
@@ -5314,68 +5314,68 @@
     "/assets/NotFoundPage-DyLAYEu8.js"
   ],
   "src/pages/OnePagerPage.vue": [
-    "/assets/OnePagerPage-ewzRH9qw.js",
+    "/assets/OnePagerPage-Dq4q5tg4.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPage-ewzRH9qw.js",
+    "/assets/OnePagerPage-Dq4q5tg4.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=style&index=0&scoped=50ec27e8&lang.css": [
-    "/assets/OnePagerPage-ewzRH9qw.js",
+    "/assets/OnePagerPage-Dq4q5tg4.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPrintPage.vue": [
-    "/assets/OnePagerPrintPage-BkAPehkb.js",
+    "/assets/OnePagerPrintPage-DBh_CYFJ.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPrintPage-BkAPehkb.js",
+    "/assets/OnePagerPrintPage-DBh_CYFJ.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=0&lang.css": [
-    "/assets/OnePagerPrintPage-BkAPehkb.js",
+    "/assets/OnePagerPrintPage-DBh_CYFJ.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=1&scoped=731297d6&lang.css": [
-    "/assets/OnePagerPrintPage-BkAPehkb.js",
+    "/assets/OnePagerPrintPage-DBh_CYFJ.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/PersonaComparisonPage.vue": [
-    "/assets/PersonaComparisonPage-BTpIQsUR.js",
-    "/assets/PersonaComparisonPage-ClHXSxLj.css"
+    "/assets/PersonaComparisonPage-BbYtUpHh.js",
+    "/assets/PersonaComparisonPage-Su6jp6lu.css"
   ],
   "src/pages/PersonaComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PersonaComparisonPage-BTpIQsUR.js",
-    "/assets/PersonaComparisonPage-ClHXSxLj.css"
+    "/assets/PersonaComparisonPage-BbYtUpHh.js",
+    "/assets/PersonaComparisonPage-Su6jp6lu.css"
   ],
-  "src/pages/PersonaComparisonPage.vue?vue&type=style&index=0&scoped=5e59f33e&lang.css": [
-    "/assets/PersonaComparisonPage-BTpIQsUR.js",
-    "/assets/PersonaComparisonPage-ClHXSxLj.css"
+  "src/pages/PersonaComparisonPage.vue?vue&type=style&index=0&scoped=874abd5f&lang.css": [
+    "/assets/PersonaComparisonPage-BbYtUpHh.js",
+    "/assets/PersonaComparisonPage-Su6jp6lu.css"
   ],
   "src/pages/PlatformPage.vue": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=style&index=0&scoped=cb5d0326&lang.css": [
-    "/assets/PlatformPage-dIciqWo8.js",
+    "/assets/PlatformPage-DekQeu1Z.js",
     "/assets/PlatformPage-C2d9O07X.css"
   ],
   "src/pages/PolygonIdComparisonPage.vue": [
-    "/assets/PolygonIdComparisonPage-DyzpUssv.js",
-    "/assets/PolygonIdComparisonPage-XbyebOzv.css"
+    "/assets/PolygonIdComparisonPage-DomycdlR.js",
+    "/assets/PolygonIdComparisonPage-zCFuwPwY.css"
   ],
   "src/pages/PolygonIdComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PolygonIdComparisonPage-DyzpUssv.js",
-    "/assets/PolygonIdComparisonPage-XbyebOzv.css"
+    "/assets/PolygonIdComparisonPage-DomycdlR.js",
+    "/assets/PolygonIdComparisonPage-zCFuwPwY.css"
   ],
-  "src/pages/PolygonIdComparisonPage.vue?vue&type=style&index=0&scoped=57010751&lang.css": [
-    "/assets/PolygonIdComparisonPage-DyzpUssv.js",
-    "/assets/PolygonIdComparisonPage-XbyebOzv.css"
+  "src/pages/PolygonIdComparisonPage.vue?vue&type=style&index=0&scoped=0d5d0a16&lang.css": [
+    "/assets/PolygonIdComparisonPage-DomycdlR.js",
+    "/assets/PolygonIdComparisonPage-zCFuwPwY.css"
   ],
   "src/pages/PricingPage.vue": [
     "/assets/PricingPage-BCdj-asN.js",
@@ -5432,16 +5432,16 @@
     "/assets/ServiceLevelAgreementPage-b1-ffNBd.css"
   ],
   "src/pages/SignzyComparisonPage.vue": [
-    "/assets/SignzyComparisonPage-O73DmAEs.js",
-    "/assets/SignzyComparisonPage-BGyWLuXw.css"
+    "/assets/SignzyComparisonPage-CCSibCyK.js",
+    "/assets/SignzyComparisonPage-PKcs29SO.css"
   ],
   "src/pages/SignzyComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/SignzyComparisonPage-O73DmAEs.js",
-    "/assets/SignzyComparisonPage-BGyWLuXw.css"
+    "/assets/SignzyComparisonPage-CCSibCyK.js",
+    "/assets/SignzyComparisonPage-PKcs29SO.css"
   ],
-  "src/pages/SignzyComparisonPage.vue?vue&type=style&index=0&scoped=b5e3913b&lang.css": [
-    "/assets/SignzyComparisonPage-O73DmAEs.js",
-    "/assets/SignzyComparisonPage-BGyWLuXw.css"
+  "src/pages/SignzyComparisonPage.vue?vue&type=style&index=0&scoped=507925e3&lang.css": [
+    "/assets/SignzyComparisonPage-CCSibCyK.js",
+    "/assets/SignzyComparisonPage-PKcs29SO.css"
   ],
   "src/pages/SolutionsPage.vue": [
     "/assets/SolutionsPage-Bw_Duo0l.js",
@@ -5456,16 +5456,16 @@
     "/assets/SolutionsPage-BZGZmfOn.css"
   ],
   "src/pages/SumsubComparisonPage.vue": [
-    "/assets/SumsubComparisonPage-D0hbdeBb.js",
-    "/assets/SumsubComparisonPage-CWWb5rlf.css"
+    "/assets/SumsubComparisonPage-erAVxH6T.js",
+    "/assets/SumsubComparisonPage-OEgrhyoj.css"
   ],
   "src/pages/SumsubComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/SumsubComparisonPage-D0hbdeBb.js",
-    "/assets/SumsubComparisonPage-CWWb5rlf.css"
+    "/assets/SumsubComparisonPage-erAVxH6T.js",
+    "/assets/SumsubComparisonPage-OEgrhyoj.css"
   ],
-  "src/pages/SumsubComparisonPage.vue?vue&type=style&index=0&scoped=9571e7b0&lang.css": [
-    "/assets/SumsubComparisonPage-D0hbdeBb.js",
-    "/assets/SumsubComparisonPage-CWWb5rlf.css"
+  "src/pages/SumsubComparisonPage.vue?vue&type=style&index=0&scoped=74b76da6&lang.css": [
+    "/assets/SumsubComparisonPage-erAVxH6T.js",
+    "/assets/SumsubComparisonPage-OEgrhyoj.css"
   ],
   "src/pages/TermsPage.vue": [
     "/assets/TermsPage-CECPr3OX.js",
