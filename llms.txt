@@ -1,5 +1,7 @@
 # Hypersign — Identity Infrastructure for Modern Compliance
 
+> Full-stack identity infrastructure — KYC, KYB, AML screening, biometrics, consent management, encrypted identity vaults, and reusable verifiable credentials in one platform.
+
 Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, biometric verification, consent management, encrypted identity vaults, and reusable verifiable credentials. It is built for compliance teams and product teams in fintech, banking, crypto, and regulated industries. Hypersign is eIDAS 2.0, GDPR, and India DPDP compliant and supports identity verification in 189+ countries.
 
 ## Product
