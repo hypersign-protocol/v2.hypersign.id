@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkedIn Company Cover Banner – Hypersign (1128×191)</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --foreground: #303d5f;
+      --text-muted: #64748b;
+      --brand-light:#c9d1ff;
+      --brand-mid:  #303d5f;
+      --brand-dark: #191c27;
+    }
+
+    /* ── Canvas: exactly 1128 × 191 (LinkedIn company page cover) ─── */
+    html, body { width: 1128px; height: 191px; overflow: hidden; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      position: relative;
+
+      background:
+        radial-gradient(ellipse 70% 90% at 15% 0%,  color-mix(in srgb, #c9d1ff 30%, transparent), transparent 70%),
+        radial-gradient(ellipse 60% 90% at 100% 100%, color-mix(in srgb, #303d5f 16%, transparent), transparent 68%),
+        #ffffff;
+    }
+
+    /* faint dot grid, matches the reference banner texture */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(48,61,95,0.14) 1px, transparent 1px);
+      background-size: 20px 20px;
+      pointer-events: none;
+    }
+
+    /* keep the bottom-left clear: LinkedIn overlaps the org logo circle there */
+    .safe-note { display: none; }
+
+    .wrap {
+      position: relative;
+      width: 1128px;
+      height: 191px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding-left: 220px; /* clears the avatar overlap zone at bottom-left */
+      padding-right: 40px;
+    }
+
+    .logo-row img {
+      height: 16px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.88;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -0.3px;
+      text-align: center;
+      color: var(--foreground);
+      white-space: nowrap;
+    }
+
+    h1 .accent {
+      background: linear-gradient(90deg, var(--brand-mid), #6f7bb8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .tagline .dot {
+      margin: 0 8px;
+      color: #c3cadd;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="content">
+    <div class="logo-row">
+      <img src="./imports/logo.png" alt="Hypersign" />
+    </div>
+    <h1>Identity infrastructure <span class="accent">for modern compliance</span></h1>
+    <div class="tagline">
+      KYC<span class="dot">·</span>KYB<span class="dot">·</span>AML<span class="dot">·</span>CONSENT<span class="dot">·</span>VERIFIABLE CREDENTIALS
+    </div>
+  </div>
+</div>
+</body>
+</html>

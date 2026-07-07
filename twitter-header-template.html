@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Twitter/X Profile Header – Hypersign (1500×500)</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --foreground: #303d5f;
+      --text-muted: #64748b;
+      --brand-light:#c9d1ff;
+      --brand-mid:  #303d5f;
+      --brand-dark: #191c27;
+    }
+
+    /* ── Canvas: exactly 1500 × 500 (Twitter/X profile header) ─── */
+    html, body { width: 1500px; height: 500px; overflow: hidden; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      position: relative;
+
+      background:
+        radial-gradient(ellipse 65% 75% at 12% 10%,  color-mix(in srgb, #c9d1ff 30%, transparent), transparent 70%),
+        radial-gradient(ellipse 55% 70% at 100% 100%, color-mix(in srgb, #303d5f 16%, transparent), transparent 68%),
+        #ffffff;
+    }
+
+    /* faint dot grid, matches the reference banner texture */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(48,61,95,0.14) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+
+    .wrap {
+      position: relative;
+      width: 1500px;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 60px; /* profile photo overlaps the bottom-left; content stays centered/high */
+    }
+
+    .logo-row img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 1.16;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: var(--foreground);
+    }
+
+    h1 .accent {
+      background: linear-gradient(90deg, var(--brand-mid), #6f7bb8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .tagline .dot {
+      margin: 0 14px;
+      color: #c3cadd;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="content">
+    <div class="logo-row">
+      <img src="./imports/logo.png" alt="Hypersign" />
+    </div>
+    <h1>Identity infrastructure<br><span class="accent">for modern compliance</span></h1>
+    <div class="tagline">
+      KYC<span class="dot">·</span>KYB<span class="dot">·</span>AML<span class="dot">·</span>CONSENT<span class="dot">·</span>VERIFIABLE CREDENTIALS
+    </div>
+  </div>
+</div>
+</body>
+</html>
