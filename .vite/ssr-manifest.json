@@ -20,7 +20,7 @@
     "/assets/zkpass_logo-ClopES8a.js"
   ],
   "../../../../imports/Garden-CHTs90Z6.png": [
-    "/assets/HomePage-DK_pq2N-.js",
+    "/assets/HomePage-Bga6dGcL.js",
     "/assets/HomePage-D9Io47zI.css"
   ],
   "../../../../imports/cheqd-CKvL4BCh.png": [
@@ -34,7 +34,7 @@
   ],
   "../../../../imports/logo.png": [],
   "../../../../imports/quillAudit-5yyue2b8.jpg": [
-    "/assets/HomePage-DK_pq2N-.js",
+    "/assets/HomePage-Bga6dGcL.js",
     "/assets/HomePage-D9Io47zI.css"
   ],
   "../../../../imports/zkpass_logo.jpg": [
@@ -4954,15 +4954,15 @@
   "src/components/layout/Footer.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/layout/Navbar.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/platform/PlatformFeatureVisual.vue": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=style&index=0&scoped=8940355e&lang.css": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/index.css": [],
@@ -5033,16 +5033,16 @@
     "/assets/BiometricVerificationPage-CdlbwfMA.css"
   ],
   "src/pages/BlogDetailPage.vue": [
-    "/assets/BlogDetailPage-BvHwWj8f.js",
-    "/assets/BlogDetailPage-BWbS-Moc.css"
+    "/assets/BlogDetailPage-BkKh4nhu.js",
+    "/assets/BlogDetailPage-Bivf_X_d.css"
   ],
   "src/pages/BlogDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/BlogDetailPage-BvHwWj8f.js",
-    "/assets/BlogDetailPage-BWbS-Moc.css"
+    "/assets/BlogDetailPage-BkKh4nhu.js",
+    "/assets/BlogDetailPage-Bivf_X_d.css"
   ],
-  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=45d48307&lang.css": [
-    "/assets/BlogDetailPage-BvHwWj8f.js",
-    "/assets/BlogDetailPage-BWbS-Moc.css"
+  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=e4b63f5a&lang.css": [
+    "/assets/BlogDetailPage-BkKh4nhu.js",
+    "/assets/BlogDetailPage-Bivf_X_d.css"
   ],
   "src/pages/BookDemoPage.vue": [
     "/assets/BookDemoPage-DQCuUDx6.js"
@@ -5075,15 +5075,15 @@
     "/assets/CaseStudiesPage-q21OMu_L.css"
   ],
   "src/pages/CaseStudyDetailPage.vue": [
-    "/assets/CaseStudyDetailPage-BQ4X4kau.js",
+    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/CaseStudyDetailPage-BQ4X4kau.js",
+    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=style&index=0&scoped=111092a8&lang.css": [
-    "/assets/CaseStudyDetailPage-BQ4X4kau.js",
+    "/assets/CaseStudyDetailPage-BZ_ERXFN.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/ConsentManagementPage.vue": [
@@ -5183,15 +5183,15 @@
     "/assets/GlobalPresencePage-BnyO_JjM.css"
   ],
   "src/pages/HomePage.vue": [
-    "/assets/HomePage-DK_pq2N-.js",
+    "/assets/HomePage-Bga6dGcL.js",
     "/assets/HomePage-D9Io47zI.css"
   ],
   "src/pages/HomePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HomePage-DK_pq2N-.js",
+    "/assets/HomePage-Bga6dGcL.js",
     "/assets/HomePage-D9Io47zI.css"
   ],
   "src/pages/HomePage.vue?vue&type=style&index=0&scoped=84fde5b2&lang.css": [
-    "/assets/HomePage-DK_pq2N-.js",
+    "/assets/HomePage-Bga6dGcL.js",
     "/assets/HomePage-D9Io47zI.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue": [
@@ -5333,31 +5333,31 @@
     "/assets/NotFoundPage-BEcLSF8_.js"
   ],
   "src/pages/OnePagerPage.vue": [
-    "/assets/OnePagerPage-CorKq2r_.js",
+    "/assets/OnePagerPage-BT1Jh-GP.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPage-CorKq2r_.js",
+    "/assets/OnePagerPage-BT1Jh-GP.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=style&index=0&scoped=50ec27e8&lang.css": [
-    "/assets/OnePagerPage-CorKq2r_.js",
+    "/assets/OnePagerPage-BT1Jh-GP.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPrintPage.vue": [
-    "/assets/OnePagerPrintPage-Bit34kVh.js",
+    "/assets/OnePagerPrintPage-DlwtAgl0.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPrintPage-Bit34kVh.js",
+    "/assets/OnePagerPrintPage-DlwtAgl0.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=0&lang.css": [
-    "/assets/OnePagerPrintPage-Bit34kVh.js",
+    "/assets/OnePagerPrintPage-DlwtAgl0.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=1&scoped=731297d6&lang.css": [
-    "/assets/OnePagerPrintPage-Bit34kVh.js",
+    "/assets/OnePagerPrintPage-DlwtAgl0.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/PersonaComparisonPage.vue": [
@@ -5373,15 +5373,15 @@
     "/assets/PersonaComparisonPage-DqkrwQNf.css"
   ],
   "src/pages/PlatformPage.vue": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=style&index=0&scoped=4a98e7cb&lang.css": [
-    "/assets/PlatformPage-D2maRlfF.js",
+    "/assets/PlatformPage-CFodq9C0.js",
     "/assets/PlatformPage-C8z2HZUu.css"
   ],
   "src/pages/PolygonIdComparisonPage.vue": [
