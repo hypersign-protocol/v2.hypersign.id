@@ -20,24 +20,47 @@ Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, bi
 - [Magic Link KYC](https://hypersign.id/solutions/magic-link-kyc-kyb): Send a verification link to users; no SDK or app install required.
 - [White Label](https://hypersign.id/platform/white-label): Fully branded identity verification flows for enterprises.
 - [Verified AI & Human](https://hypersign.id/solutions/verified-ai-human): Verify whether an entity is a real human or an AI agent.
+- [Login](https://hypersign.id/platform/login): Social, email, PIN, and OTP login in one flow.
+- [Selective Disclosure & Zero-Knowledge Proofs](https://hypersign.id/platform/selective-disclosure): Attribute-level consent and zero-knowledge age or threshold proofs, so a verifier gets only the fact it asked for.
+
+## Developers
+
+- [Developer Overview](https://hypersign.id/platform/api): Three integration paths (hosted verification link, embeddable widget, REST API) and the core design principles behind the platform — standards-first, privacy by design, composable APIs, session-based security.
+- [Quickstart: Go Live in Minutes](https://docs.hypersign.id/hypersign-id/tutorials/how-to-verify-users-without-any-integration): No-code, shareable magic-link verification.
+- [Widget Integration Guide](https://docs.hypersign.id/hypersign-id/tutorials/how-to-integrate-hypersign-id-widget-in-your-app): Embed the Hypersign ID widget in your app.
+- [API Reference: Custom KYC Flow](https://docs.hypersign.id/hypersign-id/tutorials/how-to-build-a-custom-kyc-flow-with-the-hypersign-id-apis): Build a fully custom onboarding flow on the REST API.
+- [Full Documentation](https://docs.hypersign.id/hypersign-kyc/integrations): Guides, concepts, and API references.
 
 ## Solutions
 
 - [Solutions Overview](https://hypersign.id/solutions): Cross-industry identity orchestration for onboarding, compliance, and fraud prevention.
 - [Fintech](https://hypersign.id/industries/identity-verification-fintech): KYC, AML, and reusable credentials for neobanks, payment platforms, and crypto exchanges.
 - [Industries](https://hypersign.id/industries): Identity infrastructure for banking, insurance, healthcare, real estate, and more.
+- [Web3 & Crypto](https://hypersign.id/industries/web3): KYC, KYB, and KYT for on-chain platforms.
 - [Global Presence](https://hypersign.id/global-presence): Coverage across 189+ countries with localised document and compliance support.
-- [Marketplace](https://hypersign.id/industries/identity-verification-marketplace): Integrations and partner ecosystem.
+- [Marketplace](https://hypersign.id/industries/identity-verification-marketplace): Verify sellers, buyers, and gig workers on marketplace platforms.
 
 ## Pricing
 
 - [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Approximately 30% cheaper than Persona.
+
+## Comparisons
+
+- [Hypersign vs Competitors](https://hypersign.id/vs): Feature-by-feature comparisons against other identity verification platforms.
+- [Hypersign vs Persona](https://hypersign.id/vs/persona)
+- [Hypersign vs Sumsub](https://hypersign.id/vs/sumsub)
+- [Hypersign vs HyperVerge](https://hypersign.id/vs/hyperverge)
+- [Hypersign vs Signzy](https://hypersign.id/vs/signzy)
+- [Hypersign vs Polygon ID (Privado ID)](https://hypersign.id/vs/polygon-id)
+- [Hypersign vs Zyphe](https://hypersign.id/vs/zyphe)
+- [Hypersign vs Didit](https://hypersign.id/vs/didit)
 
 ## Company
 
 - [About](https://hypersign.id/about): Team, mission, and backers (DSCI, PWC, Start2, and others).
 - [Case Studies](https://hypersign.id/case-studies): Real-world deployments including UAE banking.
 - [Resources](https://hypersign.id/resources): Blog posts, guides, and compliance documentation.
+- [Platform One-Pager](https://hypersign.id/resources/one-pager): One-page brief covering the full platform, proof points, and pricing.
 - [Book a Demo](https://hypersign.id/book-demo): Schedule a live walkthrough with the Hypersign team.
 
 ## Legal
