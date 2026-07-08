@@ -237,8 +237,56 @@
 
   <!-- Blog posts -->
   <url>
+    <loc>https://hypersign.id/resources/blog/kyc-is-becoming-infrastructure</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://hypersign.id/resources/blog/best-kyc-providers-web3-2026</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/kyc-verification-process-explained</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/white-label-identity-verification</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/dpdp-act-kyc-compliance-fintech</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/gdpr-identity-verification-kyc-compliance</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/eidas-2-0-kyc-stack-readiness</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/openid-foundation-mdl-verifiable-credentials-kyc</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/aml-fraud-partner-checklist-hypersign</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
