@@ -18,7 +18,7 @@ Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, bi
 - [Decision Engine](https://hypersign.id/platform/decision-engine): Configurable risk scoring and orchestration across the full verification stack.
 - [Transaction Monitoring](https://hypersign.id/platform/transaction-monitoring): Ongoing monitoring for suspicious activity post-onboarding.
 - [Age Verification](https://hypersign.id/solutions/age-verification): Privacy-preserving age checks without storing raw identity data.
-- [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification): OTP-based eKYC and Offline Aadhaar (QR/XML) verification with biometric face match, built for Indian onboarding.
+- [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification): OTP-based eKYC and Offline Aadhaar (QR/XML) verification with biometric face match, selective disclosure, and an immutable DPDP-aligned consent trail, built for Indian onboarding.
 - [Magic Link KYC](https://hypersign.id/solutions/magic-link-kyc-kyb): Send a verification link to users; no SDK or app install required.
 - [White Label](https://hypersign.id/platform/white-label): Fully branded identity verification flows for enterprises.
 - [Verified AI & Human](https://hypersign.id/solutions/verified-ai-human): Verify whether an entity is a real human or an AI agent.
