@@ -42,6 +42,15 @@ Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, bi
 - [Global Presence](https://hypersign.id/global-presence): Coverage across 189+ countries with localised document and compliance support.
 - [Marketplace](https://hypersign.id/industries/identity-verification-marketplace): Verify sellers, buyers, and gig workers on marketplace platforms.
 
+## Compliance Guides
+
+- [DPDP Consent Manager vs. Consent Management Platform vs. KYC-Embedded Consent](https://hypersign.id/resources/blog/dpdp-consent-manager-vs-consent-platform-fintech): The boundary between DPDP's registered Consent Manager role, general-purpose consent platforms (OneTrust, Consently, ConsentOS, Digital Anumati), and consent captured at the KYC moment — and which a fintech actually needs.
+- [DPDP Act Compliance for Fintech KYC](https://hypersign.id/resources/blog/dpdp-act-kyc-compliance-fintech): What India's Digital Personal Data Protection Act changes for a fintech's KYC stack — granular consent, enforced retention and deletion, vendor accountability — mapped to the controls that satisfy it.
+- [Your Account Aggregator License Meets DPDP. It Was Never Built for KYC Consent.](https://hypersign.id/resources/blog/account-aggregator-license-dpdp-kyc-consent-gap): Why an RBI Account Aggregator license covers financial-data consent but not the PAN, Aadhaar, and biometric KYC consent gap, mapped point-by-point against DPDP Act obligations, with citations to the Act, Rules, and RBI Directions.
+- [cKYC Doesn't Mean "Verify Once" Anymore](https://hypersign.id/resources/blog/ckyc-otp-stale-data-dpdp-problem): Why India's Central KYC Registry doesn't solve re-verification or DPDP-grade consent, and what a credential-based model changes.
+- [GDPR and KYC Compliance](https://hypersign.id/resources/blog/gdpr-identity-verification-kyc-compliance): How GDPR's consent, minimization, and erasure requirements apply to identity verification.
+- [eIDAS 2.0 KYC Stack Readiness](https://hypersign.id/resources/blog/eidas-2-0-kyc-stack-readiness): What the EU Digital Identity Wallet and eIDAS 2.0 require of a KYC stack.
+
 ## Pricing
 
 - [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Approximately 30% cheaper than Persona.

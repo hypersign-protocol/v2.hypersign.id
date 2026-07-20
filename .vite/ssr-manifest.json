@@ -20,7 +20,7 @@
     "/assets/zkpass_logo-ClopES8a.js"
   ],
   "../../../../imports/Garden-CHTs90Z6.png": [
-    "/assets/HomePage-hOcH96lL.js",
+    "/assets/HomePage-DEtXtMvQ.js",
     "/assets/HomePage-C6Y45U_u.css"
   ],
   "../../../../imports/cheqd-CKvL4BCh.png": [
@@ -34,7 +34,7 @@
   ],
   "../../../../imports/logo.png": [],
   "../../../../imports/quillAudit-5yyue2b8.jpg": [
-    "/assets/HomePage-hOcH96lL.js",
+    "/assets/HomePage-DEtXtMvQ.js",
     "/assets/HomePage-C6Y45U_u.css"
   ],
   "../../../../imports/zkpass_logo.jpg": [
@@ -4954,15 +4954,15 @@
   "src/components/layout/Footer.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/layout/Navbar.vue?vue&type=script&setup=true&lang.ts": [],
   "src/components/platform/PlatformFeatureVisual.vue": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/components/platform/PlatformFeatureVisual.vue?vue&type=style&index=0&scoped=8940355e&lang.css": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/index.css": [],
@@ -5033,16 +5033,16 @@
     "/assets/BiometricVerificationPage-DFqs5-1p.css"
   ],
   "src/pages/BlogDetailPage.vue": [
-    "/assets/BlogDetailPage-67UDoTkG.js",
-    "/assets/BlogDetailPage-Q-qq0Tyf.css"
+    "/assets/BlogDetailPage-DKYumOpf.js",
+    "/assets/BlogDetailPage-CrQTQ1wv.css"
   ],
   "src/pages/BlogDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/BlogDetailPage-67UDoTkG.js",
-    "/assets/BlogDetailPage-Q-qq0Tyf.css"
+    "/assets/BlogDetailPage-DKYumOpf.js",
+    "/assets/BlogDetailPage-CrQTQ1wv.css"
   ],
-  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=df251960&lang.css": [
-    "/assets/BlogDetailPage-67UDoTkG.js",
-    "/assets/BlogDetailPage-Q-qq0Tyf.css"
+  "src/pages/BlogDetailPage.vue?vue&type=style&index=0&scoped=ee39adae&lang.css": [
+    "/assets/BlogDetailPage-DKYumOpf.js",
+    "/assets/BlogDetailPage-CrQTQ1wv.css"
   ],
   "src/pages/BookDemoPage.vue": [
     "/assets/BookDemoPage-HhxTfDJq.js"
@@ -5075,15 +5075,15 @@
     "/assets/CaseStudiesPage-q21OMu_L.css"
   ],
   "src/pages/CaseStudyDetailPage.vue": [
-    "/assets/CaseStudyDetailPage-BoPaDfFI.js",
+    "/assets/CaseStudyDetailPage-BzeYjprU.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/CaseStudyDetailPage-BoPaDfFI.js",
+    "/assets/CaseStudyDetailPage-BzeYjprU.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/CaseStudyDetailPage.vue?vue&type=style&index=0&scoped=111092a8&lang.css": [
-    "/assets/CaseStudyDetailPage-BoPaDfFI.js",
+    "/assets/CaseStudyDetailPage-BzeYjprU.js",
     "/assets/CaseStudyDetailPage-BwGnKEMX.css"
   ],
   "src/pages/ConsentManagementPage.vue": [
@@ -5183,15 +5183,15 @@
     "/assets/GlobalPresencePage-Db1o8qEC.css"
   ],
   "src/pages/HomePage.vue": [
-    "/assets/HomePage-hOcH96lL.js",
+    "/assets/HomePage-DEtXtMvQ.js",
     "/assets/HomePage-C6Y45U_u.css"
   ],
   "src/pages/HomePage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HomePage-hOcH96lL.js",
+    "/assets/HomePage-DEtXtMvQ.js",
     "/assets/HomePage-C6Y45U_u.css"
   ],
   "src/pages/HomePage.vue?vue&type=style&index=0&scoped=21ca3a83&lang.css": [
-    "/assets/HomePage-hOcH96lL.js",
+    "/assets/HomePage-DEtXtMvQ.js",
     "/assets/HomePage-C6Y45U_u.css"
   ],
   "src/pages/HowItWorksPage.vue": [
@@ -5207,16 +5207,16 @@
     "/assets/HowItWorksPage-x6rMn-r7.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue": [
-    "/assets/HyperVergeComparisonPage-DrirmSVb.js",
-    "/assets/HyperVergeComparisonPage-KY0FPotV.css"
+    "/assets/HyperVergeComparisonPage-ClxKjD5n.js",
+    "/assets/HyperVergeComparisonPage-BKRlhEfH.css"
   ],
   "src/pages/HyperVergeComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/HyperVergeComparisonPage-DrirmSVb.js",
-    "/assets/HyperVergeComparisonPage-KY0FPotV.css"
+    "/assets/HyperVergeComparisonPage-ClxKjD5n.js",
+    "/assets/HyperVergeComparisonPage-BKRlhEfH.css"
   ],
-  "src/pages/HyperVergeComparisonPage.vue?vue&type=style&index=0&scoped=2af58fd3&lang.css": [
-    "/assets/HyperVergeComparisonPage-DrirmSVb.js",
-    "/assets/HyperVergeComparisonPage-KY0FPotV.css"
+  "src/pages/HyperVergeComparisonPage.vue?vue&type=style&index=0&scoped=c817cee8&lang.css": [
+    "/assets/HyperVergeComparisonPage-ClxKjD5n.js",
+    "/assets/HyperVergeComparisonPage-BKRlhEfH.css"
   ],
   "src/pages/IdVerificationPage.vue": [
     "/assets/IdVerificationPage-BW2dCP8W.js",
@@ -5345,31 +5345,31 @@
     "/assets/NotFoundPage-DFetqGGW.js"
   ],
   "src/pages/OnePagerPage.vue": [
-    "/assets/OnePagerPage-Bz_ktB9t.js",
+    "/assets/OnePagerPage-DqdOkbD0.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPage-Bz_ktB9t.js",
+    "/assets/OnePagerPage-DqdOkbD0.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPage.vue?vue&type=style&index=0&scoped=50ec27e8&lang.css": [
-    "/assets/OnePagerPage-Bz_ktB9t.js",
+    "/assets/OnePagerPage-DqdOkbD0.js",
     "/assets/OnePagerPage-BrO-AIpr.css"
   ],
   "src/pages/OnePagerPrintPage.vue": [
-    "/assets/OnePagerPrintPage-BHrmHgN6.js",
+    "/assets/OnePagerPrintPage-DYivlFiz.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/OnePagerPrintPage-BHrmHgN6.js",
+    "/assets/OnePagerPrintPage-DYivlFiz.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=0&lang.css": [
-    "/assets/OnePagerPrintPage-BHrmHgN6.js",
+    "/assets/OnePagerPrintPage-DYivlFiz.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/OnePagerPrintPage.vue?vue&type=style&index=1&scoped=731297d6&lang.css": [
-    "/assets/OnePagerPrintPage-BHrmHgN6.js",
+    "/assets/OnePagerPrintPage-DYivlFiz.js",
     "/assets/OnePagerPrintPage-BonSKo2E.css"
   ],
   "src/pages/PersonaComparisonPage.vue": [
@@ -5385,15 +5385,15 @@
     "/assets/PersonaComparisonPage-CyQRoo9i.css"
   ],
   "src/pages/PlatformPage.vue": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/pages/PlatformPage.vue?vue&type=style&index=0&scoped=fa741eb7&lang.css": [
-    "/assets/PlatformPage-sHLoqZC0.js",
+    "/assets/PlatformPage-Cvr9rNDW.js",
     "/assets/PlatformPage-DQmwY9qy.css"
   ],
   "src/pages/PolygonIdComparisonPage.vue": [
@@ -5433,10 +5433,10 @@
     "/assets/PrivacyPolicyPage-MHDiukHc.css"
   ],
   "src/pages/ResourcesPage.vue": [
-    "/assets/ResourcesPage-B5S8mii5.js"
+    "/assets/ResourcesPage-DF28mO6y.js"
   ],
   "src/pages/ResourcesPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/ResourcesPage-B5S8mii5.js"
+    "/assets/ResourcesPage-DF28mO6y.js"
   ],
   "src/pages/ReusableKYCPage.vue": [
     "/assets/ReusableKYCPage-BrHvLQVt.js",
@@ -5475,16 +5475,16 @@
     "/assets/ServiceLevelAgreementPage-b1-ffNBd.css"
   ],
   "src/pages/SignzyComparisonPage.vue": [
-    "/assets/SignzyComparisonPage-DabTZD2C.js",
-    "/assets/SignzyComparisonPage-g24eAaxj.css"
+    "/assets/SignzyComparisonPage-DcyYlgTl.js",
+    "/assets/SignzyComparisonPage-CEdhTmQs.css"
   ],
   "src/pages/SignzyComparisonPage.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/SignzyComparisonPage-DabTZD2C.js",
-    "/assets/SignzyComparisonPage-g24eAaxj.css"
+    "/assets/SignzyComparisonPage-DcyYlgTl.js",
+    "/assets/SignzyComparisonPage-CEdhTmQs.css"
   ],
-  "src/pages/SignzyComparisonPage.vue?vue&type=style&index=0&scoped=98914227&lang.css": [
-    "/assets/SignzyComparisonPage-DabTZD2C.js",
-    "/assets/SignzyComparisonPage-g24eAaxj.css"
+  "src/pages/SignzyComparisonPage.vue?vue&type=style&index=0&scoped=a3ff2c35&lang.css": [
+    "/assets/SignzyComparisonPage-DcyYlgTl.js",
+    "/assets/SignzyComparisonPage-CEdhTmQs.css"
   ],
   "src/pages/SolutionsPage.vue": [
     "/assets/SolutionsPage-DJ-dIaDL.js",
