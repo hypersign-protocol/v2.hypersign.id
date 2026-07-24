@@ -53,7 +53,7 @@ Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, bi
 
 ## Pricing
 
-- [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Approximately 30% cheaper than Persona.
+- [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Ongoing pay-as-you-go rate ($0.75/verification) is approximately 30% cheaper than Persona and 50% cheaper than Sumsub at meaningful volume; see the worked methodology at hypersign.id/pricing#methodology.
 
 ## Comparisons
 
@@ -69,6 +69,7 @@ Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, bi
 ## Company
 
 - [About](https://hypersign.id/about): Team, mission, and backers (DSCI, PWC, Start2, and others).
+- [Global Presence](https://hypersign.id/global-presence): Hypersign's presence at identity industry offices and conferences worldwide, including G&D, Concordium, and Identity Week Europe.
 - [Case Studies](https://hypersign.id/case-studies): Real-world deployments including UAE banking.
 - [Resources](https://hypersign.id/resources): Blog posts, guides, and compliance documentation.
 - [Platform One-Pager](https://hypersign.id/resources/one-pager): One-page brief covering the full platform, proof points, and pricing.
