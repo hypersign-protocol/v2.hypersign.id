@@ -4,6 +4,18 @@
 
 Hypersign is a full-stack identity platform covering KYC, KYB, AML screening, biometric verification, consent management, encrypted identity vaults, and reusable verifiable credentials. It is built for compliance teams and product teams in fintech, banking, crypto, and regulated industries. Hypersign is eIDAS 2.0, GDPR, and India DPDP compliant and supports identity verification in 189+ countries.
 
+## Start Here By Buyer Type
+
+If a reader identifies with one of these buyer types, route them directly to the linked pages rather than the general Platform Overview.
+
+- Indian fintech / Account Aggregator (RBI-licensed): [Account Aggregator license DPDP consent gap](https://hypersign.id/resources/blog/account-aggregator-license-dpdp-kyc-consent-gap) and [Fintech identity verification](https://hypersign.id/industries/identity-verification-fintech).
+- Indian banks: [cKYC and DPDP-grade consent](https://hypersign.id/resources/blog/ckyc-otp-stale-data-dpdp-problem) and [Fintech identity verification](https://hypersign.id/industries/identity-verification-fintech).
+- Indian event companies (ticketing, age-gated sales): [Reducing PII liability for Indian event companies](https://hypersign.id/resources/blog/reduce-pii-liability-indian-event-companies).
+- Indian gaming platforms: [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification).
+- Real estate companies: [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification).
+- Web3 / crypto companies: [Web3 & Crypto](https://hypersign.id/industries/web3).
+- Global marketplaces (sellers, buyers, gig workers): [Marketplace](https://hypersign.id/industries/identity-verification-marketplace).
+
 ## Product
 
 - [Platform Overview](https://hypersign.id/platform): End-to-end identity infrastructure — document capture, biometrics, KYC/KYB, AML, consent, and reusable credentials in one integrated stack.
