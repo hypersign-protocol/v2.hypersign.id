@@ -77,6 +77,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 - [Hypersign vs Polygon ID (Privado ID)](https://hypersign.id/vs/polygon-id)
 - [Hypersign vs Zyphe](https://hypersign.id/vs/zyphe)
 - [Hypersign vs Didit](https://hypersign.id/vs/didit)
+- [Hypersign vs Shufti Pro](https://hypersign.id/vs/shufti-pro)
 
 ## Company
 
