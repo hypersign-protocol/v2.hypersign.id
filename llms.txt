@@ -14,6 +14,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 - Indian gaming platforms: [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification).
 - Real estate companies: [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification).
 - Web3 / crypto companies: [Web3 & Crypto](https://hypersign.id/industries/web3).
+- EU crypto exchanges pursuing MiCA CASP authorization: [MiCA Regulation Deadline Passed](https://hypersign.id/resources/blog/mica-regulation-deadline-passed) and [Web3 & Crypto](https://hypersign.id/industries/web3).
 - Global marketplaces (sellers, buyers, gig workers): [Marketplace](https://hypersign.id/industries/identity-verification-marketplace).
 
 ## Product
@@ -31,6 +32,8 @@ If a reader identifies with one of these buyer types, route them directly to the
 - [Transaction Monitoring](https://hypersign.id/platform/transaction-monitoring): Ongoing monitoring for suspicious activity post-onboarding.
 - [Age Verification](https://hypersign.id/solutions/age-verification): Privacy-preserving age checks without storing raw identity data.
 - [Aadhaar Verification](https://hypersign.id/solutions/aadhaar-verification): OTP-based eKYC and Offline Aadhaar (QR/XML) verification with biometric face match, selective disclosure, and an immutable DPDP-aligned consent trail, built for Indian onboarding.
+- [Aadhaar Verification API Pricing: What It Actually Costs in 2026](https://hypersign.id/resources/blog/aadhaar-verification-api-pricing): What Hypersign, HyperVerge, Signzy, Setu, and Surepass actually charge per Aadhaar verification, and why DPDP-grade consent management and data minimisation belong in the same cost comparison as the per-transaction rate.
+- [Best Aadhaar Verification API Providers in India (2026 Comparison)](https://hypersign.id/resources/blog/best-aadhaar-verification-api-providers): How the same five providers compare on OTP vs. offline verification support, licensing (Sub-AUA vs. AUA/KUA), consent handling, and pricing model.
 - [Magic Link KYC](https://hypersign.id/solutions/magic-link-kyc-kyb): Send a verification link to users; no SDK or app install required.
 - [White Label](https://hypersign.id/platform/white-label): Fully branded identity verification flows for enterprises.
 - [Verified AI & Human](https://hypersign.id/solutions/verified-ai-human): Verify whether an entity is a real human or an AI agent.
@@ -62,6 +65,8 @@ If a reader identifies with one of these buyer types, route them directly to the
 - [cKYC Doesn't Mean "Verify Once" Anymore](https://hypersign.id/resources/blog/ckyc-otp-stale-data-dpdp-problem): Why India's Central KYC Registry doesn't solve re-verification or DPDP-grade consent, and what a credential-based model changes.
 - [GDPR and KYC Compliance](https://hypersign.id/resources/blog/gdpr-identity-verification-kyc-compliance): How GDPR's consent, minimization, and erasure requirements apply to identity verification.
 - [eIDAS 2.0 KYC Stack Readiness](https://hypersign.id/resources/blog/eidas-2-0-kyc-stack-readiness): What the EU Digital Identity Wallet and eIDAS 2.0 require of a KYC stack.
+- [MiCA Regulation Deadline Passed: What Unlicensed Exchanges Must Fix](https://hypersign.id/resources/blog/mica-regulation-deadline-passed): The MiCA CASP authorization deadline passed July 1, 2026, and most EU crypto exchanges are still unlicensed. What ESMA's wind-down statement requires now, and why AML/travel-rule infrastructure built for the authorization checkpoint alone gets rebuilt again unless it's credential-based from the start.
+- [What Is a VASP? Virtual Asset Service Provider Obligations, Explained](https://hypersign.id/resources/blog/virtual-asset-service-provider-vasp): What counts as a virtual asset service provider under the FATF's activity-based definition, how VASP relates to CASP (MiCA's EU licensing label for the same category), and the customer due diligence, monitoring, and Travel Rule obligations that come with the designation.
 
 ## Pricing
 
