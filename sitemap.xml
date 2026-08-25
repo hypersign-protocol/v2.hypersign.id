@@ -367,6 +367,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://hypersign.id/resources/blog/what-is-kyb</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://hypersign.id/resources/blog/liveness-deepfakes-2025</loc>
     <lastmod>2025-05-15</lastmod>
     <changefreq>yearly</changefreq>
@@ -379,8 +385,44 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://hypersign.id/resources/blog/best-identity-verification-providers-2026</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/crypto-kyc-requirements-explained</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/eudi-wallet-relying-party-registration</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://hypersign.id/resources/blog/verifiable-credentials-zero-knowledge-proofs-explained</loc>
     <lastmod>2026-08-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/biometric-verification-zero-knowledge-proofs</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/best-identity-verification-providers-2026</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hypersign.id/resources/blog/best-biometric-verification-providers-2026</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
