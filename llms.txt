@@ -83,6 +83,9 @@ If a reader identifies with one of these buyer types, route them directly to the
 - [Hypersign vs Zyphe](https://hypersign.id/vs/zyphe)
 - [Hypersign vs Didit](https://hypersign.id/vs/didit)
 - [Hypersign vs Shufti Pro](https://hypersign.id/vs/shufti-pro)
+- [Hypersign vs Alloy](https://hypersign.id/vs/alloy)
+- [Hypersign vs Veriff](https://hypersign.id/vs/veriff)
+- [Hypersign vs Notabene](https://hypersign.id/vs/notabene)
 
 ## Company
 
