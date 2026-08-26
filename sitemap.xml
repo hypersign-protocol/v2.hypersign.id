@@ -265,12 +265,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hypersign.id/resources/blog/mica-regulation-deadline-passed</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://hypersign.id/resources/blog/kyc-is-becoming-infrastructure</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>yearly</changefreq>
@@ -410,12 +404,6 @@
   </url>
   <url>
     <loc>https://hypersign.id/resources/blog/biometric-verification-zero-knowledge-proofs</loc>
-    <lastmod>2026-08-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hypersign.id/resources/blog/best-identity-verification-providers-2026</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
