@@ -85,6 +85,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hypersign.id/platform/compass</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hypersign.id/platform/api</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
