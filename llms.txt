@@ -71,7 +71,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 
 ## Pricing
 
-- [Pricing](https://hypersign.id/pricing): Starter plan at $500 for 3 months — includes 100 KYC checks, KYB at $20/check, free encrypted storage, and consent infrastructure. Ongoing pay-as-you-go rate ($0.75/verification) is approximately 30% cheaper than Persona and 50% cheaper than Sumsub at meaningful volume; see the worked methodology at hypersign.id/pricing#methodology.
+- [Pricing](https://hypersign.id/pricing): Free sandbox (50 KYC checks in the first month), Pay As You Go at $0.45/KYC (biometric + ID verification + liveness + consent, reusable KYC included; $0.45 rate on credit purchases above $250, smaller top-ups at a higher rate; credits valid 6 months), and Enterprise (annual committed-volume pricing, custom SLA, white-label). Pay-as-you-go is approximately 55% cheaper than Persona and 65% cheaper than Sumsub at meaningful volume; see the worked methodology at hypersign.id/pricing#methodology.
 
 ## Comparisons
 
