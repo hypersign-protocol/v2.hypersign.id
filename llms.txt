@@ -79,6 +79,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 
 - [Hypersign vs Competitors](https://hypersign.id/vs): Feature-by-feature comparisons against other identity verification platforms.
 - [10 Best Identity Verification Software Providers (2026 Pricing)](https://hypersign.id/resources/blog/best-identity-verification-providers-2026): Hypersign, Veriff, Sumsub, Persona, Entrust (Onfido), Jumio, Incode, iDenfy, IDnow, and HyperVerge compared on coverage, speed, fraud detection, privacy controls, and published per-check pricing.
+- [10 Best KYC Providers & Vendors in 2026 (Pricing Compared)](https://hypersign.id/resources/blog/best-kyc-providers-2026): Hypersign, Sumsub, Entrust, GBG, Trulioo, AU10TIX, Socure, Persona, iDenfy, and Ondato compared on KYB, AML screening, ongoing monitoring, credential reuse, and published per-check pricing.
 - [Hypersign vs Persona](https://hypersign.id/vs/persona)
 - [Persona Pricing 2026: Plans, Startup Program & Real Cost](https://hypersign.id/resources/blog/persona-pricing-2026): What Persona charges per verification on its published Essential tier, what the separate Startup Program includes, what sits behind the unpriced Growth and Enterprise tiers, and how the total compares to Hypersign.
 - [Hypersign vs Sumsub](https://hypersign.id/vs/sumsub)
