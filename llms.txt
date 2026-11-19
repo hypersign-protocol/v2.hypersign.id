@@ -48,6 +48,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 - [Widget Integration Guide](https://docs.hypersign.id/hypersign-id/tutorials/how-to-integrate-hypersign-id-widget-in-your-app): Embed the Hypersign ID widget in your app.
 - [API Reference: Custom KYC Flow](https://docs.hypersign.id/hypersign-id/tutorials/how-to-build-a-custom-kyc-flow-with-the-hypersign-id-apis): Build a fully custom onboarding flow on the REST API.
 - [Full Documentation](https://docs.hypersign.id/hypersign-kyc/integrations): Guides, concepts, and API references.
+- [Machine Readable Zone (MRZ) Explained](https://hypersign.id/resources/blog/machine-readable-zone-mrz): How to read the MRZ code on a passport, the TD1/TD2/TD3 formats under ICAO Doc 9303, how 7-3-1 check digits work, and how the MRZ unlocks an e-passport's NFC chip (BAC/PACE).
 
 ## Solutions
 
@@ -76,6 +77,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 ## Comparisons
 
 - [Hypersign vs Competitors](https://hypersign.id/vs): Feature-by-feature comparisons against other identity verification platforms.
+- [10 Best Identity Verification Software Providers (2026 Pricing)](https://hypersign.id/resources/blog/best-identity-verification-providers-2026): Hypersign, Veriff, Sumsub, Persona, Entrust (Onfido), Jumio, Incode, iDenfy, IDnow, and HyperVerge compared on coverage, speed, fraud detection, privacy controls, and published per-check pricing.
 - [Hypersign vs Persona](https://hypersign.id/vs/persona)
 - [Hypersign vs Sumsub](https://hypersign.id/vs/sumsub)
 - [Hypersign vs HyperVerge](https://hypersign.id/vs/hyperverge)
