@@ -73,7 +73,7 @@ If a reader identifies with one of these buyer types, route them directly to the
 
 ## Pricing
 
-- [Pricing](https://hypersign.id/pricing): Free sandbox (50 KYC checks in the first month), Pay As You Go at $0.45/KYC (biometric + ID verification + liveness + consent, reusable KYC included; $0.45 rate on credit purchases above $250, smaller top-ups at a higher rate; credits valid 6 months), and Enterprise (annual committed-volume pricing, custom SLA, white-label). Pay-as-you-go is approximately 55% cheaper than Persona and 65% cheaper than Sumsub at meaningful volume; see the worked methodology at hypersign.id/pricing#methodology.
+- [Pricing](https://hypersign.id/pricing): Free sandbox (50 KYC checks in the first month), Pay As You Go at $0.45/KYC (biometric + ID verification + liveness + consent, reusable KYC included; $0.45 rate on credit purchases above $250, smaller top-ups at a higher rate; credits valid 6 months), and Enterprise (annual committed-volume pricing, custom SLA, white-label). Pay-as-you-go is approximately 55% cheaper than Persona and 65% cheaper than Sumsub at meaningful volume; see the worked methodology at hypersign.id/pricing#methodology. India APIs are billed separately in rupees: Aadhaar verification ₹6 per check (₹15 per journey with Face Match, ₹7,500 monthly minimum covering 500 journeys), PAN verification ₹1.2 per check (₹1,200 monthly minimum covering 1,000 checks), and 1:1 Face Match ₹8 per match.
 
 ## Comparisons
 
